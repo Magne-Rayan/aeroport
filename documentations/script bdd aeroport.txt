@@ -1,0 +1,183 @@
+CREATE USER 'Aeroport'@'%' IDENTIFIED WITH caching_sha2_password BY '97Y4]jj)q/YQ';GRANT USAGE ON *.* TO 'Aeroport'@'%';ALTER USER 'Aeroport'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS `Aeroport`;GRANT ALL PRIVILEGES ON `Aeroport`.* TO 'Aeroport'@'%';
+
+use 'Aeroport';
+
+
+DROP TABLE IF EXISTS `utilisateur`;
+CREATE TABLE IF NOT EXISTS `utilisateur` (
+  `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(50) NOT NULL,
+  `prenon` varchar(50) NOT NULL,
+  `date_naissance` date NOT NULL,
+  `mail`varchar(50) NOT NULL,
+  `mdp` varchar(50) NOT NULL,
+  `ref_role` int(11) NOT NULL,
+  PRIMARY KEY (`id_utilisateur`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 
+DROP TABLE IF EXISTS `vol`;
+CREATE TABLE IF NOT EXISTS `vol` (
+  `id_vol` int(11) NOT NULL AUTO_INCREMENT,
+  `numero_vol` varchar(50) NOT NULL,
+  `heureDepp`  varchar(50) NOT NULL,
+  `heureArr`   date NOT NULL,
+  `ref_ville`  int(11) NOT NULL,
+  `ref_avion`  int(11) NOT NULL,
+  PRIMARY KEY (`id_vol`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `avion`;
+CREATE TABLE IF NOT EXISTS `avion` (
+  `id_avion`  int(11) NOT NULL AUTO_INCREMENT,
+  `modele`    varchar(50) NOT NULL,
+  `nb_place`  int(6) NOT NULL,
+  `ref_compagnie` int (11) NOT NULL,
+  PRIMARY KEY (`id_avion`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `compagnie`;
+CREATE TABLE IF NOT EXISTS `compagnie` (
+  `id_compagnie` int(11) NOT NULL AUTO_INCREMENT,
+  `nom`    varchar(50) NOT NULL,
+  PRIMARY KEY (`id_compagnie`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `RoleAvion`;
+CREATE TABLE IF NOT EXISTS `RoleAvion` (
+  `ref_avion` int(11) NOT NULL,
+  `ref_role` int(11) NOT NULL,
+  PRIMARY KEY (`ref_avion`,`ref_role`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `conger`;
+CREATE TABLE IF NOT EXISTS `conger` (
+  `id_conger` int(11) NOT NULL AUTO_INCREMENT,
+  `DateDebut`  varchar(50) NOT NULL,
+  `DateFin`  varchar(50) NOT NULL,
+  PRIMARY KEY (`id_conger`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `role`;
+CREATE TABLE IF NOT EXISTS `role` (
+  `id_role` int(11) NOT NULL AUTO_INCREMENT,
+  `fonction`  varchar(50) NOT NULL,
+  PRIMARY KEY (`id_role`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `CongerRole`;
+CREATE TABLE IF NOT EXISTS `CongerRole` (
+  `ref_conger` int(11) NOT NULL,
+  `ref_role` int(11) NOT NULL,
+  PRIMARY KEY (`ref_conger`,`ref_role`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `ville`;
+CREATE TABLE IF NOT EXISTS `ville` (
+  `id_ville` int(11) NOT NULL AUTO_INCREMENT,
+  `nom`  varchar(50) NOT NULL,
+  `ref_pays` int(11) NOT NULL,
+  PRIMARY KEY (`id_ville`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+DROP TABLE IF EXISTS `pays`;
+CREATE TABLE IF NOT EXISTS `pays` (
+  `id_pays` int(11) NOT NULL AUTO_INCREMENT,
+  `nom`  varchar(50) NOT NULL,
+  PRIMARY KEY (`id_pays`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 
+DROP TABLE IF EXISTS `VolAeroport`;
+CREATE TABLE IF NOT EXISTS `VolAeroport` (
+  `ref_vol` int(11) NOT NULL,
+  `ref_aeroport` int(11) NOT NULL,
+  PRIMARY KEY (`ref_vol`,`ref_aeroport`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 
+DROP TABLE IF EXISTS `aeroport`;
+CREATE TABLE IF NOT EXISTS `aeroport` (
+  `id_aeroport` int(11) NOT NULL AUTO_INCREMENT,
+  `nom`  varchar(50) NOT NULL,
+  `ref_ville` int(11) NOT NULL,
+  PRIMARY KEY (`id_aeroport`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 
+DROP TABLE IF EXISTS `RoleCompagnie`;
+CREATE TABLE IF NOT EXISTS `RoleCompagnie` (
+  `ref_role` int(11) NOT NULL,
+  `ref_compagnie`int(11) NOT NULL,
+  PRIMARY KEY (`ref_role`,`ref_compagnie`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+DROP TABLE IF EXISTS `reservation`;
+CREATE TABLE IF NOT EXISTS `reservation` (
+  `id_reservation` int(11) NOT NULL AUTO_INCREMENT,
+  `numeroReservation` varchar(50) NOT NULL,
+  `ref_utilisateur` int(11) NOT NULL,
+  `ref_vol` int(11) NOT NULL,
+  PRIMARY KEY (`id_reservation`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ 
+ 
+ALTER TABLE `utilisateur`
+  ADD CONSTRAINT `fk_utilisateur_role` FOREIGN KEY (`ref_role`) REFERENCES `role`
+(`id_role`);
+ 
+ALTER TABLE `vol`
+  ADD CONSTRAINT `fk_vol_avion` FOREIGN KEY (`ref_avion`) REFERENCES `avion`
+(`id_avion`),
+ ADD CONSTRAINT `fk_vol_ville` FOREIGN KEY (`ref_ville`) REFERENCES `ville`
+(`id_ville`);
+ 
+ALTER TABLE `avion`
+  ADD CONSTRAINT `fk_avion_compagnie` FOREIGN KEY (`ref_compagnie`) REFERENCES `compagnie`
+(`id_compagnie`);
+ 
+ALTER TABLE `ville`
+  ADD CONSTRAINT `fk_ville_pays` FOREIGN KEY (`ref_pays`) REFERENCES `pays`
+(`id_pays`);
+ 
+ALTER TABLE `aeroport`
+  ADD CONSTRAINT `fk_aeroport_ville` FOREIGN KEY (`ref_ville`) REFERENCES `ville`
+(`id_ville`);
+ 
+ALTER TABLE `VolAeroport`
+  ADD CONSTRAINT `fk_VolAeroport_vol` FOREIGN KEY (`ref_vol`) REFERENCES `vol`
+(`id_vol`), 
+ADD CONSTRAINT `fk_VolAeroport_aeroport` FOREIGN KEY (`ref_aeroport`) REFERENCES `aeroport`
+(`id_aeroport`);
+ 
+ 
+ALTER TABLE `RoleAvion`
+  ADD CONSTRAINT `fk_RoleAvion_role` FOREIGN KEY (`ref_role`) REFERENCES `role`
+(`id_role`), 
+ADD CONSTRAINT `fk_RoleAvion_avion` FOREIGN KEY (`ref_avion`) REFERENCES `avion`
+(`id_avion`);
+ 
+ 
+ALTER TABLE `CongerRole`
+  ADD CONSTRAINT `fk_CongerRole_conger` FOREIGN KEY (`ref_conger`) REFERENCES `conger`
+(`id_conger`), 
+  ADD CONSTRAINT `fk_CongerRole_role` FOREIGN KEY (`ref_role`) REFERENCES `role`
+(`id_role`); 
+ 
+ALTER TABLE `RoleCompagnie`
+  ADD CONSTRAINT `fk_RoleCompagnie_compagnie` FOREIGN KEY (`ref_compagnie`) REFERENCES `compagnie`
+(`id_avion`), 
+  ADD CONSTRAINT `fk_RoleCompagnie_role` FOREIGN KEY (`ref_role`) REFERENCES `role`
+(`id_role`); 
+
+ALTER TABLE `RoleAvion`
+  ADD CONSTRAINT `fk_RoleAvion_avion` FOREIGN KEY (`ref_avion`) REFERENCES `avion`
+(`id_avion`), 
+  ADD CONSTRAINT `fk_RoleAvion_role` FOREIGN KEY (`ref_role`) REFERENCES `role`
+(`id_role`); 
+ALTER TABLE `reservation`
+  ADD CONSTRAINT `fk_reservation_vol` FOREIGN KEY (`ref_vol`) REFERENCES `vol`
+(`id_vol`),
+ ADD CONSTRAINT `fk_reservation_utilisateur` FOREIGN KEY (`ref_utilisateur`) REFERENCES `utilisateur`
+(`id_utilisateur`);

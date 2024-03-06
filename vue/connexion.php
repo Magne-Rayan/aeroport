@@ -8,7 +8,7 @@
 <section>
     <div class="form-box" >
         <div class="form-value">
-            <form action="">
+            <form action="../src/controleur/TraitementUtilisateur.php" method="post">
                 <h2>Connexion</h2>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
