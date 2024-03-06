@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tour & Travel</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/family.css" rel="stylesheet">
-=======
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +8,13 @@
 	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
->>>>>>> e3b4ae87594009ea2877fe73920c3a151ba506ba
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
 	<link href="../assets/css/element.css" rel="stylesheet">
-	<link href="css/ken-burns.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../assets/css/ken-burns.css" rel="stylesheet" type="text/css" media="all" />
 	<link type="text/css" rel="stylesheet" href="../assets/css/animate.css">
 	<script src="../assets/js/jquery-2.1.1.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/js/codebase/dhtmlxcalendar.css"/>
 	<script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
 	<script>
 		var myCalendar;
@@ -48,7 +37,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="../index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,30 +50,30 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Mainpages</li>
-									<li><a href="../offers.html">Offers</a></li>
-									<li><a href="../full_search.html">Search full page</a></li>
-									<li><a href="../presentation.html"> Presentation</a></li>
-									<li><a href="../footer_2.html">New footer page</a></li>
-									<li><a href="../full_page.html">All contents</a></li>
-									<li><a href="../homepage_2.html">Second homepage</a></li>
-									<li><a href="../new_homepage.html">Another homepage</a></li>
+									<li><a href="offers.php">Offers</a></li>
+									<li><a href="full_search.php">Search full page</a></li>
+									<li><a href="presentation.html"> Presentation</a></li>
+									<li><a href="footer_2.php">New footer page</a></li>
+									<li><a href="full_page.php">All contents</a></li>
+									<li><a href="homepage_2.php">Second homepage</a></li>
+									<li><a href="new_homepage.php">Another homepage</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Inner pages</li>
-									<li><a href="">Inner 1</a></li>
-									<li><a href="">Inner 2 </a></li>
-									<li><a href="">Inner 3 </a></li>
+									<li><a href="#">Inner 1</a></li>
+									<li><a href="#">Inner 2 </a></li>
+									<li><a href="#">Inner 3 </a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Themes</li>
-									<li><a href="">Dark</a></li>
-									<li><a href="">Light</a></li>
-									<li><a href="">Catchy</a></li>
-									<li><a href="">Attractive</a></li>
+									<li><a href="#">Dark</a></li>
+									<li><a href="#">Light</a></li>
+									<li><a href="#">Catchy</a></li>
+									<li><a href="#">Attractive</a></li>
 									<li class="dropdown-header">Trending Pages</li>
 								</ul>
 							</li>
@@ -100,45 +89,45 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Internal pages</li>
-									<li><a href="../vue/list.html">Listing</a></li>
-									<li><a href="../vue/detail.html">Listing Details</a></li>
-									<li><a href="../vue/blog.html">Blog</a></li>
-									<li><a href="../vue/blog_detail.html">Blog details</a></li>
-									<li><a href="../vue/about.html">About us</a></li>
-									<li><a href="../vue/payment.html">Payment type</a></li>
-									<li><a href="../vue/contact.html">Contact us</a></li>
+									<li><a href="list.php">Listing</a></li>
+									<li><a href="detail.php">Listing Details</a></li>
+									<li><a href="blog.php">Blog</a></li>
+									<li><a href="blog_detail.php">Blog details</a></li>
+									<li><a href="about.php">About us</a></li>
+									<li><a href="payment.php">Payment type</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Trending</li>
-									<li><a href=""> Homepage </a></li>
-									<li><a href=""> List </a></li>
-									<li><a href=""> Payment</a></li>
-									<li><a href="">Another list</a></li>
-									<li><a href="">Another payment</a></li>
+									<li><a href="#"> Homepage </a></li>
+									<li><a href="#"> List </a></li>
+									<li><a href="#"> Payment</a></li>
+									<li><a href="#">Another list</a></li>
+									<li><a href="#">Another payment</a></li>
 
-									<li><a href="">Another list</a></li>
-									<li><a href="">List details</a></li>
-									<li><a href="">Next payment</a></li>
-									<li><a href="">Another list</a></li>
-									<li><a href="">Another payment</a></li>
-									<li><a href="">Another list</a></li>
-									<li><a href="">Blog details</a></li>
-									<li><a href="">Another payment</a></li>
-									<li><a href="">Another page</a></li>
+									<li><a href="#">Another list</a></li>
+									<li><a href="#">List details</a></li>
+									<li><a href="#">Next payment</a></li>
+									<li><a href="#">Another list</a></li>
+									<li><a href="#">Another payment</a></li>
+									<li><a href="#">Another list</a></li>
+									<li><a href="#">Blog details</a></li>
+									<li><a href="#">Another payment</a></li>
+									<li><a href="#">Another page</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Html Coading</li>
-									<li><a href="">Products</a></li>
-									<li><a href="">Language</a></li>
-									<li><a href="">Styles</a></li>
+									<li><a href="#">Products</a></li>
+									<li><a href="#">Language</a></li>
+									<li><a href="#">Styles</a></li>
 									<li class="dropdown-header">Upcoming</li>
 
-									<li><a href="">Many Home pages</a></li>
-									<li><a href="">Details</a></li>
+									<li><a href="#">Many Home pages</a></li>
+									<li><a href="#">Details</a></li>
 									<li class="dropdown-header">Trending Pages</li>
 								</ul>
 							</li>
@@ -148,22 +137,22 @@
 					</li>
 
 					<li>
-						<a class="tag_menu" href="../vue/list.html">List</a>                    </li>
+						<a class="tag_menu" href="list.php">List</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="../vue/blog.html">Blog</a>                    </li>
+						<a class="tag_menu" href="blog.php">Blog</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="../vue/offers.html">Offers</a>                    </li>
+						<a class="tag_menu" href="offers.php">Offers</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="../vue/detail.html">Detail</a>                    </li>
+						<a class="tag_menu" href="detail.php">Detail</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="../vue/payment.html">Payment</a>                    </li>
+						<a class="tag_menu" href="payment.php">Payment</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="../vue/contact.html">Contact</a>                    </li>
+						<a class="tag_menu" href="contact.php">Contact</a>                    </li>
 
 					<li class="dropdown">
 						<a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
@@ -223,7 +212,7 @@
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
-				<script src="../assets/js/custom.js"></script>
+				<script src="js/custom.js"></script>
 			</div>
 
 		</section>
@@ -626,7 +615,49 @@
 	</div>
 </section>
 
-<section id="footer">
+<section id="presentation">
+	<div class="container">
+		<div class="row">
+			<div class="presentation clearfix">
+				<div class="col-sm-4">
+					<div class="presentation_inner clearfix">
+						<a href="#"><img src="img/12.jpg" width="100%" height="160px"></a>
+					</div>
+					<div class="presentation_inner_1 clearfix">
+						<h3 class="text-center">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</h3>
+						<hr>
+						<p>Fusce nec tellus sed augue semper porta mauris massa Vestibulum lacinia arcu eget nulla Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+						<h5 class="text-center"><a href="#">More</a></h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="presentation_inner clearfix">
+						<a href="#"><img src="img/13.jpg" width="100%" height="160px"></a>
+					</div>
+					<div class="presentation_inner_1 clearfix">
+						<h3 class="text-center">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</h3>
+						<hr>
+						<p>Fusce nec tellus sed augue semper porta mauris massa Vestibulum lacinia arcu eget nulla Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+						<h5 class="text-center"><a href="#">More</a></h5>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="presentation_inner clearfix">
+						<a href="#"><img src="img/14.jpg" width="100%" height="160px"></a>
+					</div>
+					<div class="presentation_inner_1 clearfix">
+						<h3 class="text-center">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR</h3>
+						<hr>
+						<p>Fusce nec tellus sed augue semper porta mauris massa Vestibulum lacinia arcu eget nulla Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+						<h5 class="text-center"><a href="#">More</a></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="footer" class="footer_type_2">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">

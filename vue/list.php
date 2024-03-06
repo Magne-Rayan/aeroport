@@ -35,7 +35,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,13 +48,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Mainpages</li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><a href="full_search.html">Search full page</a></li>
-									<li><a href="presentation.html"> Presentation</a></li>
-									<li><a href="footer_2.html">New footer page</a></li>
-									<li><a href="full_page.html">All contents</a></li>
-									<li><a href="homepage_2.html">Second homepage</a></li>
-									<li><a href="new_homepage.html">Another homepage</a></li>
+									<li><a href="offers.php">Offers</a></li>
+									<li><a href="full_search.php">Search full page</a></li>
+									<li><a href="presentation.php"> Presentation</a></li>
+									<li><a href="footer_2.php">New footer page</a></li>
+									<li><a href="full_page.php">All contents</a></li>
+									<li><a href="homepage_2.php">Second homepage</a></li>
+									<li><a href="new_homepage.php">Another homepage</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -88,12 +88,12 @@
 								<ul>
 									<li class="dropdown-header">Internal pages</li>
 									<li><a href="list.html">Listing</a></li>
-									<li><a href="detail.html">Listing Details</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog_detail.html">Blog details</a></li>
-									<li><a href="about.html">About us</a></li>
-									<li><a href="payment.html">Payment type</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="detail.php">Listing Details</a></li>
+									<li><a href="blog.php">Blog</a></li>
+									<li><a href="blog_detail.php">Blog details</a></li>
+									<li><a href="about.php">About us</a></li>
+									<li><a href="payment.php">Payment type</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -138,19 +138,19 @@
 						<a class="tag_menu active_tab" href="list.html">List</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="blog.html">Blog</a>                    </li>
+						<a class="tag_menu" href="blog.php">Blog</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="offers.html">Offers</a>                    </li>
+						<a class="tag_menu" href="offers.php">Offers</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="detail.html">Detail</a>                    </li>
+						<a class="tag_menu" href="detail.php">Detail</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="payment.html">Payment</a>                    </li>
+						<a class="tag_menu" href="payment.php">Payment</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="contact.html">Contact</a>                    </li>
+						<a class="tag_menu" href="contact.php">Contact</a>                    </li>
 
 					<li class="dropdown">
 						<a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
@@ -397,7 +397,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -406,7 +406,7 @@
 											<p><span>$45.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -420,7 +420,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -429,7 +429,7 @@
 											<p><span>$47.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -443,7 +443,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -452,7 +452,7 @@
 											<p><span>$49.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -469,7 +469,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -478,7 +478,7 @@
 											<p><span>$55.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -492,7 +492,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -501,7 +501,7 @@
 											<p><span>$56.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -515,7 +515,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -524,7 +524,7 @@
 											<p><span>$58.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -541,7 +541,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -550,7 +550,7 @@
 											<p><span>$72.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -564,7 +564,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -573,7 +573,7 @@
 											<p><span>$73.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -587,7 +587,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -596,7 +596,7 @@
 											<p><span>$83.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -613,7 +613,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -622,7 +622,7 @@
 											<p><span>$31.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -636,7 +636,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -645,7 +645,7 @@
 											<p><span>$39.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -659,7 +659,7 @@
 											<figcaption>
 												<h2>Tour <span>Travel</span></h2>
 												<p> Lorem ipsum dolor sit amet adipiscing elit Integer nec odio.</p>
-												<a href="detail.html">View more</a>						</figcaption>
+												<a href="detail.php">View more</a>						</figcaption>
 										</figure>
 									</div>
 									<div class="list_1_right_2_inner_1 clearfix">
@@ -668,7 +668,7 @@
 											<p><span>$41.00</span> per/day</p>
 										</div>
 										<div class="col-sm-4">
-											<h5><a href="detail.html">Book</a></h5>
+											<h5><a href="detail.php">Book</a></h5>
 										</div>
 									</div>
 								</div>
@@ -677,13 +677,13 @@
 						</div>
 						<div class="list_1_right_last clearfix text-right">
 							<ul class="pagination">
-								<li class="disabled"><a href="detail.html">«</a></li>
-								<li class="active"><a href="detail.html">1 <span class="sr-only">(current)</span></a></li>
-								<li><a href="detail.html">2</a></li>
-								<li><a href="detail.html">3</a></li>
-								<li><a href="detail.html">4</a></li>
-								<li><a href="detail.html">5</a></li>
-								<li><a href="detail.html">»</a></li>
+								<li class="disabled"><a href="detail.php">«</a></li>
+								<li class="active"><a href="detail.php">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="detail.php">2</a></li>
+								<li><a href="detail.php">3</a></li>
+								<li><a href="detail.php">4</a></li>
+								<li><a href="detail.php">5</a></li>
+								<li><a href="detail.php">»</a></li>
 							</ul>
 						</div>
 					</div>
@@ -707,7 +707,7 @@
 							<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
 							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-						<h5><a href="index.html"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
+						<h5><a href="index.php"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
 						<p>© 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
 					</div>
 				</div>

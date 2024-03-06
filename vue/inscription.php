@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
     <link rel="stylesheet" href="../assets/css/connexion.css">
-    <title>Connexion</title>
+    <title>Inscription</title>
 </head>
 <body>
 <section>
     <div class="form-box" >
         <div class="form-value">
             <form action="">
-                <h2>Connexion</h2>
+                <h2>Inscription</h2>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
                     <input type="text" name="nom" required>
@@ -36,7 +36,7 @@
                     <label for="">Mot De Passe</label>
                 </div>
                 <div class="forget">
-                    <label for=""><input type="checkbox"><a href="#">Mot De Passe Oublié</a></label>
+                    <label for=""><a href="#">Mot De Passe Oublié</a></label>
                 </div>
                 <boutton>Inscrption</boutton>
                 <div class="register">

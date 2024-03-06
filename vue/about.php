@@ -12,6 +12,7 @@
 	<link href="../assets/css/element.css" rel="stylesheet">
 	<script src="../assets/js/jquery-2.1.1.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -26,26 +27,26 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown dropdown-large">
-						<a href="#" class="dropdown-toggle  tag_menu" data-toggle="dropdown">Home <span class="badge indent0">7</span> <b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle active_tab tag_menu" data-toggle="dropdown">Home <span class="badge indent0">7</span> <b class="caret"></b></a>
 
 						<ul class="dropdown-menu dropdown-menu-large row drop_menu_1">
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Mainpages</li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><a href="full_search.html">Search full page</a></li>
-									<li><a href="presentation.html"> Presentation</a></li>
-									<li><a href="footer_2.html">New footer page</a></li>
-									<li><a href="full_page.html">All contents</a></li>
-									<li><a href="homepage_2.html">Second homepage</a></li>
-									<li><a href="new_homepage.html">Another homepage</a></li>
+									<li><a href="offers.php">Offers</a></li>
+									<li><a href="full_search.php">Search full page</a></li>
+									<li><a href="presentation.php"> Presentation</a></li>
+									<li><a href="footer_2.php">New footer page</a></li>
+									<li><a href="full_page.php">All contents</a></li>
+									<li><a href="homepage_2.php">Second homepage</a></li>
+									<li><a href="new_homepage.php">Another homepage</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -78,13 +79,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Internal pages</li>
-									<li><a href="list.html">Listing</a></li>
-									<li><a href="detail.html">Listing Details</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog_detail.html">Blog details</a></li>
+									<li><a href="list.php">Listing</a></li>
+									<li><a href="detail.php">Listing Details</a></li>
+									<li><a href="blog.php">Blog</a></li>
+									<li><a href="blog_detail.php">Blog details</a></li>
 									<li><a href="about.html">About us</a></li>
-									<li><a href="payment.html">Payment type</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="payment.php">Payment type</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -126,22 +127,22 @@
 					</li>
 
 					<li>
-						<a class="tag_menu" href="list.html">List</a>                    </li>
+						<a class="tag_menu" href="list.php">List</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="blog.html">Blog</a>                    </li>
+						<a class="tag_menu" href="blog.php">Blog</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="offers.html">Offers</a>                    </li>
+						<a class="tag_menu" href="offers.php">Offers</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="detail.html">Detail</a>                    </li>
+						<a class="tag_menu" href="detail.php">Detail</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="payment.html">Payment</a>                    </li>
+						<a class="tag_menu" href="payment.php">Payment</a>                    </li>
 
 					<li>
-						<a class="tag_menu active_tab" href="contact.html">Contact</a>                    </li>
+						<a class="tag_menu" href="contact.php">Contact</a>                    </li>
 
 					<li class="dropdown">
 						<a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
@@ -161,58 +162,120 @@
 	</nav>
 </section>
 
-<section id="contact" class="clearfix">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+FL%2C+USA!5e0!3m2!1sen!2sin!4v1530774403788" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-</section>
-
-<section id="contact_us">
+<section id="list">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
-				<div class="contact_us">
-					<form role="form" action="#" method="post">
-						<div class="col-sm-6">
-							<div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
-							<div class="form-group">
-								<label for="InputName">Your Name</label>
-								<div class="input-group">
-									<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required="">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-							</div>
-							<div class="form-group">
-								<label for="InputEmail">Your Email</label>
-								<div class="input-group">
-									<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-							</div>
-							<div class="form-group">
-								<label for="InputMessage">Message</label>
-								<div class="input-group">
-									<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required=""></textarea>
-									<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-							</div>
-							<div class="form-group">
-								<label for="InputReal">What is 2+4? (Simple Spam Checker)</label>
-								<div class="input-group">
-									<input type="text" class="form-control" name="InputReal" id="InputReal" required="">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-							</div>
-							<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
+			<div class="list clearfix">
+				<ul>
+					<li><a href="#"><i class="fa fa-home"></i></a> /</li>
+					<li><a href="#">About Us</a> </li>
+				</ul>
+			</div>
+			<div class="blog clearfix">
+				<div class="blog_top clearfix">
+					<h2>Meet our team</h2>
+				</div>
+				<div class="about_top clearfix text-center">
+					<p> Nulla quis sem at nibh elementum imperdiet Duis sagittis ipsum.Praesent mauris Fusce nec <br> tellus sed augue semper porta Mauris massa.</p>
+					<hr>
+				</div>
+				<div class="about_main clearfix">
+					<div class="col-sm-8">
+						<div class="about_left clearfix">
+							<img src="img/68.jpg" width="100%">
 						</div>
-					</form>
-
-					<div class="col-sm-5 col-sm-push-1">
-						<address>
-							<h3 class="heading_2">Our Location</h3>
-							<p class="lead"><a href="#">The Himenaeos <br>
-								Australia, DC 12345</a><br>
-								Phone: XXX-XXX-XXXX<br>
-								Fax: XXX-XXX-YYYY</p>
-						</address>
 					</div>
-
+					<div class="col-sm-4">
+						<div class="about_right clearfix">
+							<h4>Office</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent libero Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
+							<h5>Quality</h5>
+							<div class="progress">
+								<div class="progress-bar" style="width: 95%;">
+									Quality 1 95%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 90%;">
+									Quality 2 90%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 88%;">
+									Quality 3 88%
+								</div>
+							</div>
+							<div class="progress">
+								<div class="progress-bar" style="width: 92%;">
+									Quality 4 92%
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about_main_1 clearfix">
+					<div class="about_main_1_inner clearfix">
+						<h5>Meet our Team</h5>
+					</div>
+					<div class="about_main_1_inner_1 clearfix">
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_1_left clearfix">
+								<div class="team_inner">
+									<div class="card-image"><img src="img/72.jpg" width="100%"></div>
+									<h4 class="text-center">Praesent Libero</h4>
+									<h5 class="text-center">Marketing</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_1_left clearfix">
+								<div class="team_inner">
+									<div class="card-image"><img src="img/73.jpg" width="100%"></div>
+									<h4 class="text-center">Elementum Imperdiet</h4>
+									<h5 class="text-center">Oraganizer</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_1_left clearfix">
+								<div class="team_inner">
+									<div class="card-image"><img src="img/74.jpg" width="100%"></div>
+									<h4 class="text-center">Semper Porta</h4>
+									<h5 class="text-center">Manager</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about_main_1_inner_2 clearfix">
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_2_left">
+								<h4><span>1 </span> Our history</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum Fusce nec tellus.</p>
+								<h5><i class="fa fa-check"></i> Lorem ipsum dolor sit amet</h5>
+								<h5><i class="fa fa-check"></i> Consectetur adipiscing  Integer nec odio</h5>
+								<h5><i class="fa fa-check"></i> Praesent libero Sed cursus ante dapibus</h5>
+								<h5><i class="fa fa-check"></i> Nulla quis sem at nibh elementum</h5>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_2_left">
+								<h4><span>2 </span> Our final aim</h4>
+								<p>Sed cursus ante dapibus diam. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc. </p>
+								<p> Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="about_main_1_inner_2_left">
+								<h4><span>3 </span> Want to join us?</h4>
+								<p>Praesent libero Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. </p>
+								<p> Mauris massa Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc. </p>
+								<h6><a href="#">JOIN NOW</a></h6>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </section>
@@ -231,7 +294,7 @@
 							<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
 							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-						<h5><a href="index.html"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
+						<h5><a href="index.php"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
 						<p>© 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
 					</div>
 				</div>
@@ -320,7 +383,6 @@
 
 <script src="../assets/js/classie.js"></script>
 <script src="../assets/js/cbpAnimatedHeader.js"></script>
-
 
 </body>
 

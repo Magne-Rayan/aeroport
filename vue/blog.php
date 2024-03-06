@@ -28,7 +28,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -41,13 +41,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Mainpages</li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><a href="full_search.html">Search full page</a></li>
-									<li><a href="presentation.html"> Presentation</a></li>
-									<li><a href="footer_2.html">New footer page</a></li>
-									<li><a href="full_page.html">All contents</a></li>
-									<li><a href="homepage_2.html">Second homepage</a></li>
-									<li><a href="new_homepage.html">Another homepage</a></li>
+									<li><a href="offers.php">Offers</a></li>
+									<li><a href="full_search.php">Search full page</a></li>
+									<li><a href="presentation.php"> Presentation</a></li>
+									<li><a href="footer_2.php">New footer page</a></li>
+									<li><a href="full_page.php">All contents</a></li>
+									<li><a href="homepage_2.php">Second homepage</a></li>
+									<li><a href="new_homepage.php">Another homepage</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -80,13 +80,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Internal pages</li>
-									<li><a href="list.html">Listing</a></li>
-									<li><a href="detail.html">Listing Details</a></li>
+									<li><a href="list.php">Listing</a></li>
+									<li><a href="detail.php">Listing Details</a></li>
 									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog_detail.html">Blog details</a></li>
-									<li><a href="about.html">About us</a></li>
-									<li><a href="payment.html">Payment type</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="blog_detail.php">Blog details</a></li>
+									<li><a href="about.php">About us</a></li>
+									<li><a href="payment.php">Payment type</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -128,22 +128,22 @@
 					</li>
 
 					<li>
-						<a class="tag_menu" href="list.html">List</a>                    </li>
+						<a class="tag_menu" href="list.php">List</a>                    </li>
 
 					<li>
 						<a class="tag_menu active_tab" href="blog.html">Blog</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="offers.html">Offers</a>                    </li>
+						<a class="tag_menu" href="offers.php">Offers</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="detail.html">Detail</a>                    </li>
+						<a class="tag_menu" href="detail.php">Detail</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="payment.html">Payment</a>                    </li>
+						<a class="tag_menu" href="payment.php">Payment</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="contact.html">Contact</a>                    </li>
+						<a class="tag_menu" href="contact.php">Contact</a>                    </li>
 
 					<li class="dropdown">
 						<a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
@@ -196,10 +196,10 @@
 							</div>
 							<div class="blog_left_inner_1 clearfix">
 								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-								<h5>October 15, 2017/<a href="blog_detail.html">3 Reviews</a>/in <a href="blog_detail.html">Holidays</a>/by <a href="blog_detail.html">LoremWorld</a></h5>
+								<h5>October 15, 2017/<a href="blog_detail.php">3 Reviews</a>/in <a href="blog_detail.php">Holidays</a>/by <a href="blog_detail.php">LoremWorld</a></h5>
 								<hr>
 								<p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-								<h6><a href="blog_detail.html">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
+								<h6><a href="blog_detail.php">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
 							</div>
 						</div>
 						<div class="blog_left clearfix">
@@ -218,10 +218,10 @@
 							</div>
 							<div class="blog_left_inner_1 clearfix">
 								<h4>Integer Nec Odio</h4>
-								<h5>October 15, 2017/<a href="blog_detail.html">3 Reviews</a>/in <a href="blog_detail.html">Holidays</a>/by <a href="blog_detail.html">LoremWorld</a></h5>
+								<h5>October 15, 2017/<a href="blog_detail.php">3 Reviews</a>/in <a href="blog_detail.php">Holidays</a>/by <a href="blog_detail.php">LoremWorld</a></h5>
 								<hr>
 								<p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-								<h6><a href="blog_detail.html">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
+								<h6><a href="blog_detail.php">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
 							</div>
 						</div>
 						<div class="blog_left clearfix">
@@ -240,10 +240,10 @@
 							</div>
 							<div class="blog_left_inner_1 clearfix">
 								<h4> Sed cursus ante dapibus diam</h4>
-								<h5>October 15, 2017/<a href="blog_detail.html">3 Reviews</a>/in <a href="blog_detail.html">Holidays</a>/by <a href="blog_detail.html">LoremWorld</a></h5>
+								<h5>October 15, 2017/<a href="blog_detail.php">3 Reviews</a>/in <a href="blog_detail.php">Holidays</a>/by <a href="blog_detail.php">LoremWorld</a></h5>
 								<hr>
 								<p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-								<h6><a href="blog_detail.html">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
+								<h6><a href="blog_detail.php">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
 							</div>
 						</div>
 						<div class="blog_left clearfix">
@@ -262,22 +262,22 @@
 							</div>
 							<div class="blog_left_inner_1 clearfix">
 								<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-								<h5>October 15, 2017/<a href="blog_detail.html">3 Reviews</a>/in <a href="blog_detail.html">Holidays</a>/by <a href="blog_detail.html">LoremWorld</a></h5>
+								<h5>October 15, 2017/<a href="blog_detail.php">3 Reviews</a>/in <a href="blog_detail.php">Holidays</a>/by <a href="blog_detail.php">LoremWorld</a></h5>
 								<hr>
 								<p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra. </p>
-								<h6><a href="blog_detail.html">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
+								<h6><a href="blog_detail.php">LEARN MORE <i class="fa fa-arrow-right"></i></a></h6>
 								<hr>
 							</div>
 						</div>
 						<div class="blog_left_1 clearfix text-right">
 							<ul class="pagination">
-								<li class="disabled"><a href="blog_detail.html">«</a></li>
-								<li class="active"><a href="blog_detail.html">1 <span class="sr-only">(current)</span></a></li>
-								<li><a href="blog_detail.html">2</a></li>
-								<li><a href="blog_detail.html">3</a></li>
-								<li><a href="blog_detail.html">4</a></li>
-								<li><a href="blog_detail.html">5</a></li>
-								<li><a href="blog_detail.html">»</a></li>
+								<li class="disabled"><a href="blog_detail.php">«</a></li>
+								<li class="active"><a href="blog_detail.php">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="blog_detail.php">2</a></li>
+								<li><a href="blog_detail.php">3</a></li>
+								<li><a href="blog_detail.php">4</a></li>
+								<li><a href="blog_detail.php">5</a></li>
+								<li><a href="blog_detail.php">»</a></li>
 							</ul>
 						</div>
 					</div>
@@ -288,12 +288,12 @@
 							</div>
 							<div class="blog_right_inner_1 clearfix">
 								<h4>Classification</h4>
-								<h5><a href="blog_detail.html">Holidays</a> <span class="badge indent0">4</span></h5>
-								<h5><a href="blog_detail.html">Resorts</a> <span class="badge indent0">8</span></h5>
-								<h5><a href="blog_detail.html">Airways</a> <span class="badge indent0">15</span></h5>
-								<h5><a href="blog_detail.html">Advance booking</a> <span class="badge indent0">16</span></h5>
-								<h5><a href="blog_detail.html">Recent</a> <span class="badge indent0">23</span></h5>
-								<h5><a href="blog_detail.html">Sails</a> <span class="badge indent0">42</span></h5>
+								<h5><a href="blog_detail.php">Holidays</a> <span class="badge indent0">4</span></h5>
+								<h5><a href="blog_detail.php">Resorts</a> <span class="badge indent0">8</span></h5>
+								<h5><a href="blog_detail.php">Airways</a> <span class="badge indent0">15</span></h5>
+								<h5><a href="blog_detail.php">Advance booking</a> <span class="badge indent0">16</span></h5>
+								<h5><a href="blog_detail.php">Recent</a> <span class="badge indent0">23</span></h5>
+								<h5><a href="blog_detail.php">Sails</a> <span class="badge indent0">42</span></h5>
 							</div>
 							<div class="blog_right_inner_2 clearfix">
 								<ul class="nav nav-tabs">
@@ -307,12 +307,12 @@
 											<div class="detail_1_right_inner_2_inner clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/62.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/62.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Himenaeos</a></h5>
+														<h5><a href="blog_detail.php">Resort Himenaeos</a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -327,12 +327,12 @@
 											<div class="detail_1_right_inner_2_inner clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/63.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/63.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Himenaeos</a></h5>
+														<h5><a href="blog_detail.php">Resort Himenaeos</a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -347,12 +347,12 @@
 											<div class="detail_1_right_inner_2_inner border_none_1 clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/64.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/64.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Himenaeos</a></h5>
+														<h5><a href="blog_detail.php">Resort Himenaeos</a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -371,12 +371,12 @@
 											<div class="detail_1_right_inner_2_inner clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/69.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/69.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Dignissim </a></h5>
+														<h5><a href="blog_detail.php">Resort Dignissim </a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -391,12 +391,12 @@
 											<div class="detail_1_right_inner_2_inner clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/70.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/70.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Dignissim </a></h5>
+														<h5><a href="blog_detail.php">Resort Dignissim </a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -411,12 +411,12 @@
 											<div class="detail_1_right_inner_2_inner border_none_1 clearfix">
 												<div class="col-sm-5 space_left">
 													<div class="detail_1_right_inner_2_inner_left">
-														<a href="blog_detail.html"><img src="img/71.jpg" width="100%"></a>
+														<a href="blog_detail.php"><img src="img/71.jpg" width="100%"></a>
 													</div>
 												</div>
 												<div class="col-sm-7">
 													<div class="detail_1_right_inner_2_inner_right">
-														<h5><a href="blog_detail.html">Resort Dignissim </a></h5>
+														<h5><a href="blog_detail.php">Resort Dignissim </a></h5>
 														<p><span>$41-$180</span> per/day</p>
 														<h6>
 															<i class="fa fa-star"></i>
@@ -435,15 +435,15 @@
 							</div>
 							<div class="blog_right_inner_1 clearfix">
 								<h4>Archives</h4>
-								<h5><a href="blog_detail.html">December 2017</a></h5>
-								<h5><a href="blog_detail.html">November 2017</a></h5>
-								<h5><a href="blog_detail.html">October 2017</a></h5>
-								<h5><a href="blog_detail.html">September 2017</a></h5>
-								<h5><a href="blog_detail.html">August 2017</a></h5>
-								<h5><a href="blog_detail.html">July 2017</a></h5>
-								<h5><a href="blog_detail.html">June 2017</a></h5>
-								<h5><a href="blog_detail.html">May 2017</a></h5>
-								<h5><a href="blog_detail.html">April 2017</a></h5>
+								<h5><a href="blog_detail.php">December 2017</a></h5>
+								<h5><a href="blog_detail.php">November 2017</a></h5>
+								<h5><a href="blog_detail.php">October 2017</a></h5>
+								<h5><a href="blog_detail.php">September 2017</a></h5>
+								<h5><a href="blog_detail.php">August 2017</a></h5>
+								<h5><a href="blog_detail.php">July 2017</a></h5>
+								<h5><a href="blog_detail.php">June 2017</a></h5>
+								<h5><a href="blog_detail.php">May 2017</a></h5>
+								<h5><a href="blog_detail.php">April 2017</a></h5>
 							</div>
 						</div>
 					</div>
@@ -468,7 +468,7 @@
 							<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
 							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-						<h5><a href="index.html"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
+						<h5><a href="index.php"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
 						<p>© 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
 					</div>
 				</div>

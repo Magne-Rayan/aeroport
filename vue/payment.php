@@ -25,7 +25,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,13 +38,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Mainpages</li>
-									<li><a href="offers.html">Offers</a></li>
-									<li><a href="full_search.html">Search full page</a></li>
-									<li><a href="presentation.html"> Presentation</a></li>
-									<li><a href="footer_2.html">New footer page</a></li>
-									<li><a href="full_page.html">All contents</a></li>
-									<li><a href="homepage_2.html">Second homepage</a></li>
-									<li><a href="new_homepage.html">Another homepage</a></li>
+									<li><a href="offers.php">Offers</a></li>
+									<li><a href="full_search.php">Search full page</a></li>
+									<li><a href="presentation.php"> Presentation</a></li>
+									<li><a href="footer_2.php">New footer page</a></li>
+									<li><a href="full_page.php">All contents</a></li>
+									<li><a href="homepage_2.php">Second homepage</a></li>
+									<li><a href="new_homepage.php">Another homepage</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -77,13 +77,13 @@
 							<li class="col-sm-4 border_right_1">
 								<ul>
 									<li class="dropdown-header">Internal pages</li>
-									<li><a href="list.html">Listing</a></li>
-									<li><a href="detail.html">Listing Details</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog_detail.html">Blog details</a></li>
-									<li><a href="about.html">About us</a></li>
+									<li><a href="list.php">Listing</a></li>
+									<li><a href="detail.php">Listing Details</a></li>
+									<li><a href="blog.php">Blog</a></li>
+									<li><a href="blog_detail.php">Blog details</a></li>
+									<li><a href="about.php">About us</a></li>
 									<li><a href="payment.html">Payment type</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li><a href="contact.php">Contact us</a></li>
 								</ul>
 							</li>
 							<li class="col-sm-4 border_right_1">
@@ -125,22 +125,22 @@
 					</li>
 
 					<li>
-						<a class="tag_menu" href="list.html">List</a>                    </li>
+						<a class="tag_menu" href="list.php">List</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="blog.html">Blog</a>                    </li>
+						<a class="tag_menu" href="blog.php">Blog</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="offers.html">Offers</a>                    </li>
+						<a class="tag_menu" href="offers.php">Offers</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="detail.html">Detail</a>                    </li>
+						<a class="tag_menu" href="detail.php">Detail</a>                    </li>
 
 					<li>
 						<a class="tag_menu active_tab" href="payment.html">Payment</a>                    </li>
 
 					<li>
-						<a class="tag_menu" href="contact.html">Contact</a>                    </li>
+						<a class="tag_menu" href="contact.php">Contact</a>                    </li>
 
 					<li class="dropdown">
 						<a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
@@ -319,7 +319,7 @@
 							<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
 							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 						</ul>
-						<h5><a href="index.html"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
+						<h5><a href="index.php"><i class="fa fa-tree"></i>Tour &amp; TRAVEL </a></h5>
 						<p>© 2013 Your Website Name. All Rights Reserved | Design by <a href="http://www.templateonweb.com">TemplateOnWeb</a></p>
 					</div>
 				</div>
