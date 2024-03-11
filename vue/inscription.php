@@ -38,7 +38,9 @@
                 <div class="forget">
                     <label for=""><a href="#">Mot De Passe Oublié</a></label>
                 </div>
-                <button name ="inscription" >Inscription</button>
+
+                <button name ="inscription"> Inscription</button>
+
                 <div class="register">
                     <p>Je possède deja un compte <a href="../connexion.php">Connexion</a></p>
                 </div>
