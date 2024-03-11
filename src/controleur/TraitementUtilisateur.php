@@ -8,14 +8,14 @@ if(array_key_exists("Connexion",$_POST)){
         "mdp" =>$_POST['mdp'],
     ]);
     $user->connexion();
-}else if (array_key_exists("Inscription",$_POST)){
+
+}else if (array_key_exists('Inscription',$_POST)){
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
         "prenom" =>$_POST['Prenom'],
-        "age" =>$_POST['DateNaiss'],
+        "date_naissance" =>$_POST['date_naissance'],
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
-
     $user->inscription();
 }
