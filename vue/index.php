@@ -48,7 +48,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand heading_tag" href="../index.html"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
+				<a class="navbar-brand heading_tag" href="../vue/index.php"><i class="fa fa-tree"></i> TOUR & TRAVEL </a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
@@ -173,6 +173,8 @@
 							<li><a href="#">Dropdown Inner 1</a></li>
 						</ul>
 					</li>
+                    <li>
+                        <a class="tag_menu" href="connexion.php">Conexion</a>                    </li>
 
 				</ul>
 

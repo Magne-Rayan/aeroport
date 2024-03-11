@@ -8,8 +8,8 @@ class Bdd
     private $bdd;
     private $serveur = "localhost";
     private $nomBdd = "aeroport";
-    private $username = "";
-    private $password = "";
+    private $username = "Aeroport";
+    private $password = "97Y4]jj)q/YQ";
 
 
     public function __construct()

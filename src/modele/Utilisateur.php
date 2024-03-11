@@ -140,8 +140,9 @@ class Utilisateur
 
     public function inscription()
     {
-        $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT email FROM `user` WHERE email=:email');
+
+        $bdd = new \bdd\Bdd();
+        $req = $bdd->getBdd()->prepare('SELECT email FROM `utilisateur` WHERE email=:email');
         $req->execute(array(
             "email" => $this->getEmail()
         ));
@@ -149,7 +150,7 @@ class Utilisateur
         if (is_array($res)) {
             header("Location: ../../vue/inscription.php?erreur=0");
         } else {
-            $req = $bdd->getBdd()->prepare('INSERT INTO `user`( `nom`, `prenom`, `email`, `mdp`,  `age`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`, `email`, `mdp`,  `date_naissance`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),
@@ -157,14 +158,14 @@ class Utilisateur
                 'email' => $this->getEmail(),
                 'mdp' => $this->getMdp(),
             ));
-            header("Location: ../../vue/inscription.php");
+            header("Location: ../vue/connexion.php");
         }
     }
 
     public function connexion()
     {
-        $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT * FROM `user` WHERE email=:email and mdp=:mdp');
+        $bdd = new \bdd\Bdd();
+        $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE email=:email and mdp=:mdp');
         $req->execute(array(
             "email" => $this->getEmail(),
             "mdp" => $this->getMdp(),
@@ -177,7 +178,7 @@ class Utilisateur
             session_start();
 
             $_SESSION["user"] = $this;
-            header("Location: ../../vue/accueil.php");
+            header("Location: ../../vue/index.php");
         } else {
             header("Location: ../../vue/connexion.php");
         }
@@ -185,8 +186,8 @@ class Utilisateur
 
     public function editer()
     {
-        $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('UPDATE User SET nom=:nom,prenom=:prenom,DateNaiss=:DateNaiss,email=:email WHERE id_user=:id_user');
+        $bdd = new \bdd\Bdd();
+        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,email=:email WHERE id_user=:id_user');
         $res = $req->execute(array(
             "email" => $this->getEmail(),
             "age" => $this->getDate(),
@@ -205,8 +206,8 @@ class Utilisateur
 
     public function supprimer()
     {
-        $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('DELETE FROM User WHERE id_user=:id_user');
+        $bdd = new \bdd\Bdd();
+        $req = $bdd->getBdd()->prepare('DELETE FROM utilisateur WHERE id_user=:id_user');
         $res = $req->execute(array(
             "id_user" => $this->getIdUser(),
         ));

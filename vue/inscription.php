@@ -8,7 +8,7 @@
 <section>
     <div class="form-box" >
         <div class="form-value">
-            <form action="">
+            <form action="../src/controleur/TraitementUtilisateur.php" method="post">
                 <h2>Inscription</h2>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
@@ -38,7 +38,7 @@
                 <div class="forget">
                     <label for=""><a href="#">Mot De Passe Oublié</a></label>
                 </div>
-                <boutton>Inscrption</boutton>
+                <button>Inscription</button>
                 <div class="register">
                     <p>Je possède deja un compte <a href="../connexion.php">Connexion</a></p>
                 </div>

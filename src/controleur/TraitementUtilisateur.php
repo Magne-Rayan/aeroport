@@ -1,6 +1,6 @@
 <?php
 include '../bdd/Bdd.php';
-include '../model/Utilisateur.php';
+include '../modele/Utilisateur.php';
 
 if(array_key_exists("Connexion",$_POST)){
     $user = new Utilisateur([
@@ -8,11 +8,11 @@ if(array_key_exists("Connexion",$_POST)){
         "mdp" =>$_POST['mdp'],
     ]);
     $user->connexion();
-}elseif (array_key_exists("inscription",$_POST)){
+}else if (array_key_exists("Inscription",$_POST)){
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
-        "prenom" =>$_POST['prenom'],
-        "age" =>$_POST['age'],
+        "prenom" =>$_POST['Prenom'],
+        "age" =>$_POST['DateNaiss'],
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
