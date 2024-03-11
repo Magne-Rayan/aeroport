@@ -7,17 +7,15 @@ if(array_key_exists("Connexion",$_POST)){
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
-    var_dump();
     $user->connexion();
 
-}else if (array_key_exists("Inscription",$_POST)){
+}else if (array_key_exists('Inscription',$_POST)){
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
-        "prenom" =>$_POST['Prenom'],
+        "prenom" =>$_POST['prenom'],
         "date_naissance" =>$_POST['date_naissance'],
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
-    var_dump();
     $user->inscription();
 }
