@@ -8,7 +8,9 @@ if(array_key_exists("Connexion",$_POST)){
         "mdp" =>$_POST['mdp'],
     ]);
     $user->connexion();
+
 }else if (array_key_exists("Inscription",$_POST)){
+
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
         "prenom" =>$_POST['Prenom'],
@@ -16,5 +18,6 @@ if(array_key_exists("Connexion",$_POST)){
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
+
     $user->inscription();
 }
