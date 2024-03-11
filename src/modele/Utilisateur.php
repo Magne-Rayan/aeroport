@@ -141,7 +141,7 @@ class Utilisateur
     public function inscription()
     {
 
-        $bdd = new \bdd\Bdd();
+        $bdd = new Bdd();
         $req = $bdd->getBdd()->prepare('SELECT email FROM `utilisateur` WHERE email=:email');
         $req->execute(array(
             "email" => $this->getEmail()
