@@ -14,7 +14,7 @@ class Bdd
 
     public function __construct()
     {
-        $this->bdd = new PDO('mysql:host=' . $this->serveur . ';dbname=' . $this->nomBdd, $this->username, $this->password);
+        $this->bdd =  new PDO('mysql:host='.$this->serveur.';dbname='.$this->nomBdd, $this->username, $this->password);
     }
 
     public function getBdd()

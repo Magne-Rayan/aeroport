@@ -16,5 +16,6 @@ if(array_key_exists("Connexion",$_POST)){
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
+
     $user->inscription();
 }
