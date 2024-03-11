@@ -141,21 +141,21 @@ class Utilisateur
     public function inscription()
     {
 
-        $bdd = new \bdd\Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT email FROM `utilisateur` WHERE email=:email');
+        $bdd = new Bdd();
+        $req = $bdd->getBdd()->prepare('SELECT mail FROM `utilisateur` WHERE mail=:mail');
         $req->execute(array(
-            "email" => $this->getEmail()
+            "mail" => $this->getEmail()
         ));
         $res = $req->fetch();
         if (is_array($res)) {
             header("Location: ../../vue/inscription.php?erreur=0");
         } else {
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,  `date_naissance`, `email`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,  `date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :mail, :mdp, :age) ');
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),
                 'age' => $this->getDate(),
-                'email' => $this->getEmail(),
+                'mail' => $this->getEmail(),
                 'mdp' => $this->getMdp(),
             ));
             header("Location: ../vue/connexion.php");
@@ -167,7 +167,7 @@ class Utilisateur
         $bdd = new \bdd\Bdd();
         $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE email=:email and mdp=:mdp');
         $req->execute(array(
-            "email" => $this->getEmail(),
+            "mail" => $this->getEmail(),
             "mdp" => $this->getMdp(),
         ));
         $res = $req->fetch();
@@ -187,9 +187,9 @@ class Utilisateur
     public function editer()
     {
         $bdd = new \bdd\Bdd();
-        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,email=:email WHERE id_user=:id_user');
+        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:mail WHERE id_user=:id_user');
         $res = $req->execute(array(
-            "email" => $this->getEmail(),
+            "mail" => $this->getEmail(),
             "age" => $this->getDate(),
             "prenom" => $this->getPrenom(),
             "nom" => $this->getNom(),
