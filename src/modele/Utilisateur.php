@@ -150,7 +150,7 @@ class Utilisateur
         if (is_array($res)) {
             header("Location: ../../vue/inscription.php?erreur=0");
         } else {
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`, `email`, `mdp`,  `date_naissance`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,  `date_naissance`, `email`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),

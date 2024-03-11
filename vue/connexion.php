@@ -23,7 +23,7 @@
                 <div class="forget">
                     <label for=""><input type="checkbox"><a href="#">Mot De Passe Oublié</a></label>
                 </div>
-                <button>Connexion</button>
+                <button name="Connexion">Connexion</button>
                 <div class="register">
                     <p>Je n'ai pas de compte <a href="inscription.php">Inscription</a></p>
                 </div>
