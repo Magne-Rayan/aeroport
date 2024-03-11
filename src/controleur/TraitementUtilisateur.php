@@ -10,14 +10,12 @@ if(array_key_exists("Connexion",$_POST)){
     $user->connexion();
 
 }else if (array_key_exists('Inscription',$_POST)){
-var_dump($_POST['mdp']);
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
-        "prenom" =>$_POST['Prenom'],
-        "age" =>$_POST['DateNaiss'],
+        "prenom" =>$_POST['prenom'],
+        "date_naissance" =>$_POST['date_naissance'],
         "email" =>$_POST['email'],
-         "mdp" =>$_POST['mdp'],
+        "mdp" =>$_POST['mdp'],
     ]);
-
     $user->inscription();
 }

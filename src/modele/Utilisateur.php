@@ -142,21 +142,22 @@ class Utilisateur
     {
 
         $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT mail FROM `utilisateur` WHERE mail=:mail');
+        $req = $bdd->getBdd()->prepare('SELECT mail FROM `utilisateur` WHERE mail=:email');
         $req->execute(array(
-            "mail" => $this->getEmail()
+            "email" => $this->getEmail()
         ));
         $res = $req->fetch();
         if (is_array($res)) {
-            header("Location: ../../vue/inscription.php?erreur=0");
+            header("Location: ../../vue/inscription.php");
         } else {
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,  `date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :mail, :mdp, :age) ');
+
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),
-                'age' => $this->getDate(),
-                'mail' => $this->getEmail(),
+                'date_naissance' => $this->getDate(),
                 'mdp' => $this->getMdp(),
+                'email' => $this->getEmail(),
             ));
             header("Location: ../vue/connexion.php");
         }
@@ -165,9 +166,9 @@ class Utilisateur
     public function connexion()
     {
         $bdd = new \bdd\Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE email=:email and mdp=:mdp');
+        $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE mail=:email and mdp=:mdp');
         $req->execute(array(
-            "mail" => $this->getEmail(),
+            "email" => $this->getEmail(),
             "mdp" => $this->getMdp(),
         ));
         $res = $req->fetch();
@@ -187,9 +188,9 @@ class Utilisateur
     public function editer()
     {
         $bdd = new \bdd\Bdd();
-        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:mail WHERE id_user=:id_user');
+        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:email WHERE id_user=:id_user');
         $res = $req->execute(array(
-            "mail" => $this->getEmail(),
+            "email" => $this->getEmail(),
             "age" => $this->getDate(),
             "prenom" => $this->getPrenom(),
             "nom" => $this->getNom(),

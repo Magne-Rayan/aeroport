@@ -17,12 +17,12 @@
                 </div>
                 <div class="inputbox">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="text" name="Prenom" required>
+                    <input type="text" name="prenom" required>
                     <label for="">Prenom</label>
                 </div>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="date" name="DateNaiss" required>
+                    <input type="date" name="date_naissance" required>
                     <label for=""> </label>
                 </div>
                 <div class="inputbox">
@@ -38,7 +38,9 @@
                 <div class="forget">
                     <label for=""><a href="#">Mot De Passe Oublié</a></label>
                 </div>
-                <button name="Inscription">Inscription</button>
+
+                <button name ="Inscription"> Inscription</button>
+
                 <div class="register">
                     <p>Je possède deja un compte <a href="../connexion.php">Connexion</a></p>
                 </div>
