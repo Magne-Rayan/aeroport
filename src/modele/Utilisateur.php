@@ -151,13 +151,14 @@ class Utilisateur
             header("Location: ../../vue/inscription.php");
         } else {
 
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :age) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :date_naissance, :email, :mdp) ');
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),
                 'date_naissance' => $this->getDate(),
-                'mdp' => $this->getMdp(),
                 'email' => $this->getEmail(),
+                'mdp' => $this->getMdp(),
+
             ));
             header("Location: ../vue/connexion.php");
         }
@@ -165,7 +166,7 @@ class Utilisateur
 
     public function connexion()
     {
-        $bdd = new \bdd\Bdd();
+        $bdd = new Bdd();
         $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE mail=:email and mdp=:mdp');
         $req->execute(array(
             "email" => $this->getEmail(),
@@ -188,7 +189,7 @@ class Utilisateur
     public function editer()
     {
         $bdd = new \bdd\Bdd();
-        $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:email WHERE id_user=:id_user');
+            $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:email WHERE id_user=:id_user');
         $res = $req->execute(array(
             "email" => $this->getEmail(),
             "age" => $this->getDate(),
