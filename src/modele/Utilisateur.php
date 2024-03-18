@@ -153,7 +153,7 @@ class Utilisateur
         } else {
 
 
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom,:date_naissance, :email, :mdp ) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom,:date_naissance, :email, :mdp )');
 
             $req->execute(array(
                 'nom' => $this->getNom(),
@@ -192,13 +192,13 @@ class Utilisateur
     public function editer()
     {
         $bdd = new \bdd\Bdd();
-            $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:DateNaiss,mail=:email WHERE id_user=:id_user');
+            $req = $bdd->getBdd()->prepare('UPDATE utilisateur SET nom=:nom,prenom=:prenom,date_naissance=:date_naissance,mail=:email WHERE id_user=:id_user');
         $res = $req->execute(array(
             "email" => $this->getEmail(),
             "age" => $this->getDate(),
             "prenom" => $this->getPrenom(),
             "nom" => $this->getNom(),
-            "DateNaiss" => $this->getDate(),
+            "date_naissance" => $this->getDate(),
             "id_user" => $this->getIdUser()
         ));
 

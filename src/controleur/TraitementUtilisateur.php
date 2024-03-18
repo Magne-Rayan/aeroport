@@ -13,7 +13,7 @@ if(array_key_exists("Connexion",$_POST)){
     $user = new Utilisateur([
         "nom" =>$_POST['nom'],
         "prenom" =>$_POST['prenom'],
-        "date_naissance" =>$_POST['date_naissance'],
+        "date" =>$_POST['dateNaissance'],
         "email" =>$_POST['email'],
         "mdp" =>$_POST['mdp'],
     ]);
