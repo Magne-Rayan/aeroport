@@ -164,7 +164,7 @@ class Utilisateur
                 'role' => $this->getRole(),
 
             ));
-            header("Location: ../vue/index.php");
+            header("Location: ../../vue/connexion.php");
         }
     }
 
