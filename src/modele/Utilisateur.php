@@ -153,7 +153,7 @@ class Utilisateur
         } else {
 
 
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :date_naissance) ');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom,:date_naissance, :email, :mdp ) ');
 
             $req->execute(array(
                 'nom' => $this->getNom(),
