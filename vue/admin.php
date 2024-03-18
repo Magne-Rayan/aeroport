@@ -52,130 +52,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown dropdown-large">
-                        <a href="#" class="dropdown-toggle active_tab tag_menu" data-toggle="dropdown">Home <span class="badge indent0">7</span> <b class="caret"></b></a>
-
-                        <ul class="dropdown-menu dropdown-menu-large row drop_menu_1">
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Mainpages</li>
-                                    <li><a href="../offers.html">Offers</a></li>
-                                    <li><a href="../full_search.html">Search full page</a></li>
-                                    <li><a href="../presentation.html"> Presentation</a></li>
-                                    <li><a href="../footer_2.html">New footer page</a></li>
-                                    <li><a href="../full_page.html">All contents</a></li>
-                                    <li><a href="../homepage_2.html">Second homepage</a></li>
-                                    <li><a href="../new_homepage.html">Another homepage</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Inner pages</li>
-                                    <li><a href="">Inner 1</a></li>
-                                    <li><a href="">Inner 2 </a></li>
-                                    <li><a href="">Inner 3 </a></li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Themes</li>
-                                    <li><a href="">Dark</a></li>
-                                    <li><a href="">Light</a></li>
-                                    <li><a href="">Catchy</a></li>
-                                    <li><a href="">Attractive</a></li>
-                                    <li class="dropdown-header">Trending Pages</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                    <li class="dropdown dropdown-large">
-                        <a href="#" class="dropdown-toggle tag_menu" data-toggle="dropdown">All Pages <span class="badge indent0">8</span><b class="caret"></b></a>
-
-                        <ul class="dropdown-menu dropdown-menu-large row drop_menu_1">
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Internal pages</li>
-                                    <li><a href="list.php">Listing</a></li>
-                                    <li><a href="detail.php">Listing Details</a></li>
-                                    <li><a href="blog.php">Blog</a></li>
-                                    <li><a href="blog_detail.php">Blog details</a></li>
-                                    <li><a href="about.php">About us</a></li>
-                                    <li><a href="payment.php">Payment type</a></li>
-                                    <li><a href="contact.php">Contact us</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Trending</li>
-                                    <li><a href=""> Homepage </a></li>
-                                    <li><a href=""> List </a></li>
-                                    <li><a href=""> Payment</a></li>
-                                    <li><a href="">Another list</a></li>
-                                    <li><a href="">Another payment</a></li>
-
-                                    <li><a href="">Another list</a></li>
-                                    <li><a href="">List details</a></li>
-                                    <li><a href="">Next payment</a></li>
-                                    <li><a href="">Another list</a></li>
-                                    <li><a href="">Another payment</a></li>
-                                    <li><a href="">Another list</a></li>
-                                    <li><a href="">Blog details</a></li>
-                                    <li><a href="">Another payment</a></li>
-                                    <li><a href="">Another page</a></li>
-                                </ul>
-                            </li>
-                            <li class="col-sm-4 border_right_1">
-                                <ul>
-                                    <li class="dropdown-header">Html Coading</li>
-                                    <li><a href="">Products</a></li>
-                                    <li><a href="">Language</a></li>
-                                    <li><a href="">Styles</a></li>
-                                    <li class="dropdown-header">Upcoming</li>
-
-                                    <li><a href="">Many Home pages</a></li>
-                                    <li><a href="">Details</a></li>
-                                    <li class="dropdown-header">Trending Pages</li>
-                                </ul>
-                            </li>
-
-                        </ul>
-
-                    </li>
 
                     <li>
-                        <a class="tag_menu" href="list.php">List</a>                    </li>
+                        <a class="tag_menu" href="adminCompagnie.php">Compagnie</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="blog.php">Blog</a>                    </li>
+                        <a class="tag_menu" href="blog.php">Pilotes</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="offers.php">Offers</a>                    </li>
+                        <a class="tag_menu" href="offers.php">Vols</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="detail.php">Detail</a>                    </li>
+                        <a class="tag_menu" href="detail.php">Avions</a>                    </li>
 
-                    <li>
-                        <a class="tag_menu" href="payment.php">Payment</a>                    </li>
-
-                    <li>
-                        <a class="tag_menu" href="contact.php">Contact</a>                    </li>
-
-                    <li class="dropdown">
-                        <a class="tag_menu" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Offers<span class="caret"></span></a>
-                        <ul class="dropdown-menu drop_1" role="menu">
-                            <li class="dropdown-header"> Dropdown 1</li>
-                            <li><a href="#">Dropdown Inner</a></li>
-                            <li><a href="#">Dropdown Inner 1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="tag_menu" href="connexion.php">Conexion</a>
-                    </li>
-                    <li>
-                        <a class="tag_menu" href="inscription.php">Inscription</a>
-                    </li>
 
                 </ul>
 
