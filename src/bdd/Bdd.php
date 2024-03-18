@@ -1,4 +1,5 @@
 <?php
+
 class Bdd
 {
     private $bdd;

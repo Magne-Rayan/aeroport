@@ -143,6 +143,7 @@ class Utilisateur
 
         $bdd = new Bdd();
         $req = $bdd->getBdd()->prepare('SELECT mail FROM `utilisateur` WHERE mail=:email');
+
         $req->execute(array(
             "email" => $this->getEmail()
         ));
@@ -151,7 +152,9 @@ class Utilisateur
             header("Location: ../../vue/connexion.php");
         } else {
 
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :date_naissance, :email, :mdp) ');
+
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :email, :mdp, :date_naissance) ');
+
             $req->execute(array(
                 'nom' => $this->getNom(),
                 'prenom' => $this->getPrenom(),
