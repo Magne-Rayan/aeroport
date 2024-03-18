@@ -22,7 +22,7 @@
                 </div>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="date" name="date_naissance" required>
+                    <input type="date" name="dateNaissance" required>
                     <label for=""> </label>
                 </div>
                 <div class="inputbox">
