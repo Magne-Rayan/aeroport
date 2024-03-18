@@ -153,7 +153,7 @@ class Utilisateur
         } else {
 
 
-            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom,:date_naissance, :email, :mdp )');
+            $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`,`ref_role`) VALUES ( :nom, :prenom,:date_naissance, :email, :mdp,:role )');
 
             $req->execute(array(
                 'nom' => $this->getNom(),
@@ -161,6 +161,7 @@ class Utilisateur
                 'date_naissance' => $this->getDate(),
                 'email' => $this->getEmail(),
                 'mdp' => $this->getMdp(),
+                'role' => $this->getRole(),
 
             ));
             header("Location: ../vue/index.php");

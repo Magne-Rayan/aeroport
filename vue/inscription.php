@@ -36,6 +36,13 @@
                     <label for="">Mot De Passe</label>
                 </div>
                 <div class="forget">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="checkbox" name="pilote" >
+                    <label>Pilote</label>
+                    <input type="checkbox" name="utilisateur">
+                    <label>Client</label>
+                </div>
+                <div class="forget">
                     <label for=""><a href="#">Mot De Passe Oublié</a></label>
                 </div>
 
