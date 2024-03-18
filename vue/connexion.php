@@ -26,7 +26,7 @@
 
                 <button name="Connexion">Connexion</button>
                 <div class="register">
-                    <p>Je n'ai pas de compte <a href=".//inscription.php">Inscription</a></p>
+                    <p>Je n'ai pas de compte <a href="inscription.php">Inscription</a></p>
                 </div>
 
             </form>
