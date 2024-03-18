@@ -148,7 +148,7 @@ class Utilisateur
         ));
         $res = $req->fetch();
         if (is_array($res)) {
-            header("Location: ../../vue/inscription.php");
+            header("Location: ../../vue/connexion.php");
         } else {
 
             $req = $bdd->getBdd()->prepare('INSERT INTO `utilisateur`( `nom`, `prenom`,`date_naissance`, `mail`, `mdp`) VALUES ( :nom, :prenom, :date_naissance, :email, :mdp) ');
@@ -160,7 +160,7 @@ class Utilisateur
                 'mdp' => $this->getMdp(),
 
             ));
-            header("Location: ../vue/connexion.php");
+            header("Location: ../vue/index.php");
         }
     }
 
