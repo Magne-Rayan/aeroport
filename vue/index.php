@@ -9,7 +9,6 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/family.css" rel="stylesheet">
-=======
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +17,6 @@
 	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
->>>>>>> e3b4ae87594009ea2877fe73920c3a151ba506ba
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
 	<link href="../assets/css/element.css" rel="stylesheet">
 	<link href="css/ken-burns.css" rel="stylesheet" type="text/css" media="all" />
@@ -174,7 +172,11 @@
 						</ul>
 					</li>
                     <li>
-                        <a class="tag_menu" href="connexion.php">Conexion</a>                    </li>
+                        <a class="tag_menu" href="connexion.php">Conexion</a>
+                    </li>
+                    <li>
+                        <a class="tag_menu" href="inscription.php">Inscription</a>
+                    </li>
 
 				</ul>
 
