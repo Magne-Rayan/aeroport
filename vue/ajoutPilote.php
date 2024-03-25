@@ -57,7 +57,40 @@
     </nav>
 </section>
 <div id="toTop" class="btn btn-info" style="display: block; background:none; color:#999; border-color:#999;"><span class="fa fa-chevron-up"></span></div>
-<h2>Bienvenue </h2>
-<label>nom + nom compagnie</label>
+<div class="form-box" >
+    <div class="form-value">
+        <form action="../src/controleur/TraitementUtilisateur.php" method="post">
+            <h2>Ajouter un pilote</h2>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" name="nom" required>
+                <label for="">Nom</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="text" name="prenom" required>
+                <label for="">Prenom</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="date" name="dateNaissance" required>
+                <label for=""> </label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="mdp" required>
+                <label for="">Mot De Passe</label>
+            </div>
+
+            <button name ="ajouter"> Inscription</button>
+
+
+        </form>
+    </div>
 </div>
 </body>

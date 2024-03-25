@@ -17,10 +17,10 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
     <script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
-    <link href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-    <link href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+
     <script>
         var myCalendar;
         function doOnLoad() {

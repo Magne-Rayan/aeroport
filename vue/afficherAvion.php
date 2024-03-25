@@ -57,7 +57,55 @@
     </nav>
 </section>
 <div id="toTop" class="btn btn-info" style="display: block; background:none; color:#999; border-color:#999;"><span class="fa fa-chevron-up"></span></div>
-<h2>Bienvenue </h2>
-<label>nom + nom compagnie</label>
-</div>
+<div>
+    <table id="avion" style="width:100%" class="display">
+        <thead>
+        <tr>
+            <th>ID AVION</th>
+            <th>MODELE</th>
+            <th>NOMBRES DE PLACES</th>
+            <th>REF COMPAGNIE</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        include '../src/bdd/Bdd.php';
+        $bdd = new Bdd();
+        $req = $bdd->getBdd()->prepare("SELECT * FROM avion   ");
+        $req->execute();
+        $result = $req->fetchAll( PDO::FETCH_ASSOC);
+        foreach ($result as $item){
+            ?>
+
+            <tr>
+                <td><?php  echo $item['id_avion']; ?></td>
+                <td><?php  echo $item['modele']; ?></td>
+                <td><?php  echo $item['nb_place']; ?></td>
+                <td><?php  echo $item['ref_compagnie']; ?></td>
+
+
+
+                <td><input class="button_1" type="submit" name="Modifier" value="Modifier"></td>
+                <td><input class="button_1" type="submit" name="Supprimer" value="Supprimer"></td>
+            </tr>
+
+            <?php
+        }
+        ?>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>ID AVION</th>
+            <th>MODELE</th>
+            <th>NOMBRES DE PLACES</th>
+            <th>REF COMPAGNIE</th>
+        </tr>
+        </tfoot>
+    </table>
 </body>
+<script>
+    new DataTable('#avion');
+</script>
+</html>
