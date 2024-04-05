@@ -17,6 +17,10 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
     <script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+
 </head>
 <body>
 <section id="header">

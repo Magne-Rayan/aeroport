@@ -171,8 +171,15 @@
 							<li><a href="#">Dropdown Inner 1</a></li>
 						</ul>
 					</li>
+                    <?php
+                    if(isset($_SESSION["user"])){
+                        ?>
+
+                        <?php
+                    }
+                    ?>
                     <li>
-                        <a class="tag_menu" href="connexion.php">Conexion</a>
+                        <a class="tag_menu" href="connexion.php">Connexion</a>
                     </li>
                     <li>
                         <a class="tag_menu" href="inscription.php">Inscription</a>
