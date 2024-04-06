@@ -160,7 +160,7 @@ class Utilisateur
                 'prenom' => $this->getPrenom(),
                 'date_naissance' => $this->getDate(),
                 'email' => $this->getEmail(),
-                'mdp' => $this->getMdp(),
+                'mdp' => password_hash($this->getMdp(), PASSWORD_DEFAULT),
                 'role' => $this->getRole(),
 
             ));
@@ -171,20 +171,27 @@ class Utilisateur
     public function connexion()
     {
         $bdd = new Bdd();
-        $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE mail=:email and mdp=:mdp');
+        $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE mail=:email');
         $req->execute(array(
             "email" => $this->getEmail(),
-            "mdp" => $this->getMdp(),
         ));
         $res = $req->fetch();
-        if (is_array($res)) {
-            $this->setNom($res["nom"]);
-            $this->setPrenom($res["prenom"]);
-            $this->setDate($res["age"]);
-            session_start();
+        $mdp = $this->getMdp();
+        $usermdp = $res["mdp"];
 
-            $_SESSION["user"] = $this;
-            header("Location: ../../vue/index.php");
+        if (is_array($res)) {
+            if(password_verify($mdp,$usermdp)){
+                $this->setNom($res["nom"]);
+                $this->setPrenom($res["prenom"]);
+                $this->setDate($res["age"]);
+                session_start();
+                $_SESSION["user"] = $this;
+                header("Location: ../../vue/index.php");
+            }else{
+               header("Location: ../../vue/connexion.php");
+
+            }
+
         } else {
             header("Location: ../../vue/connexion.php");
         }

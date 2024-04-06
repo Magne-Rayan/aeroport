@@ -57,13 +57,13 @@
                         <a class="tag_menu" href="adminCompagnie.php">Compagnie</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="blog.php">Pilotes</a>                    </li>
+                        <a class="tag_menu" href="adminpilote.php">Pilotes</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="offers.php">Vols</a>                    </li>
+                        <a class="tag_menu" href="">Vols</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="detail.php">Avions</a>                    </li>
+                        <a class="tag_menu" href="afficherAvion.php">Avions</a>                    </li>
 
 
                 </ul>

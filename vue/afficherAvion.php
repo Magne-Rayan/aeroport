@@ -17,6 +17,10 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
     <script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+
 </head>
 <body>
 <section id="header">
@@ -57,7 +61,55 @@
     </nav>
 </section>
 <div id="toTop" class="btn btn-info" style="display: block; background:none; color:#999; border-color:#999;"><span class="fa fa-chevron-up"></span></div>
-<h2>Bienvenue </h2>
-<label>nom + nom compagnie</label>
-</div>
+<div>
+    <table id="avion" style="width:100%" class="display">
+        <thead>
+        <tr>
+            <th>ID AVION</th>
+            <th>MODELE</th>
+            <th>NOMBRES DE PLACES</th>
+            <th>REF COMPAGNIE</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        include '../src/bdd/Bdd.php';
+        $bdd = new Bdd();
+        $req = $bdd->getBdd()->prepare("SELECT * FROM avion   ");
+        $req->execute();
+        $result = $req->fetchAll( PDO::FETCH_ASSOC);
+        foreach ($result as $item){
+            ?>
+
+            <tr>
+                <td><?php  echo $item['id_avion']; ?></td>
+                <td><?php  echo $item['modele']; ?></td>
+                <td><?php  echo $item['nb_place']; ?></td>
+                <td><?php  echo $item['ref_compagnie']; ?></td>
+
+
+
+                <td><input class="button_1" type="submit" name="Modifier" value="Modifier"></td>
+                <td><input class="button_1" type="submit" name="Supprimer" value="Supprimer"></td>
+            </tr>
+
+            <?php
+        }
+        ?>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>ID AVION</th>
+            <th>MODELE</th>
+            <th>NOMBRES DE PLACES</th>
+            <th>REF COMPAGNIE</th>
+        </tr>
+        </tfoot>
+    </table>
 </body>
+<script>
+    new DataTable('#avion');
+</script>
+</html>
