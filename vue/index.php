@@ -172,18 +172,24 @@
 						</ul>
 					</li>
                     <?php
+                    include '../src/modele/Utilisateur.php';
                     if(isset($_SESSION["user"])){
                         ?>
-
+                            <li class="col-sm-4 border_right_1">
+                                <a href="#" class="dropdown-toggle tag_menu" data-toggle="dropdown">Admin <span class="badge indent0"></span><b class="caret"></b></a>
+                            </li>
+                        <?php
+                    }else{
+                    ?>
+                        <li>
+                            <a class="tag_menu" href="connexion.php">Connexion</a>
+                        </li>
+                        <li>
+                            <a class="tag_menu" href="inscription.php">Inscription</a>
+                        </li>
                         <?php
                     }
                     ?>
-                    <li>
-                        <a class="tag_menu" href="connexion.php">Connexion</a>
-                    </li>
-                    <li>
-                        <a class="tag_menu" href="inscription.php">Inscription</a>
-                    </li>
 
 				</ul>
 
@@ -202,7 +208,7 @@
 					<!-- Wrapper-for-Slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active"><!-- First-Slide -->
-							<img src="img/1.jpg" alt="" class="img-responsive">
+							<img src="../assets/images/1.jpg" alt="" class="img-responsive">
 							<div class="carousel-caption kb_caption kb_caption_right">
 								<h3 data-animation="animated flipInX" class=""> BRAZIL<br> <span class="dollar_2">UK</span></h3>
 								<h4 data-animation="animated flipInX" class="">START<br> <span class="dollar_1">$1000</span></h4>

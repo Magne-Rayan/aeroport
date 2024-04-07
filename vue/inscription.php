@@ -42,7 +42,7 @@
                 <button name ="Inscription"> Inscription</button>
 
                 <div class="register">
-                    <p>Je possède deja un compte <a href="../connexion.php">Connexion</a></p>
+                    <p>Je possède deja un compte <a href="connexion.php">Connexion</a></p>
                 </div>
 
             </form>
