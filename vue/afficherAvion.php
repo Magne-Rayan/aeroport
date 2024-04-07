@@ -69,6 +69,8 @@
             <th>MODELE</th>
             <th>NOMBRES DE PLACES</th>
             <th>REF COMPAGNIE</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
 
 
         </tr>
@@ -105,6 +107,8 @@
             <th>MODELE</th>
             <th>NOMBRES DE PLACES</th>
             <th>REF COMPAGNIE</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
         </tr>
         </tfoot>
     </table>

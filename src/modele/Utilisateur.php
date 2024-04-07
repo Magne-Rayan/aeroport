@@ -185,7 +185,7 @@ class Utilisateur
                 $this->setPrenom($res["prenom"]);
                 $this->setDate($res["age"]);
                 session_start();
-                $_SESSION["user"] = $this;
+                $_SESSION["utilisateur"] = $this;
                 header("Location: ../../vue/index.php");
             }else{
                header("Location: ../../vue/connexion.php");

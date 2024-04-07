@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -173,10 +173,12 @@
 					</li>
                     <?php
                     include '../src/modele/Utilisateur.php';
-                    if(isset($_SESSION["user"])){
+                    var_dump($_SESSION["utilisateur"]);
+
+                    if(isset($_SESSION["utilisateur"])){
                         ?>
                             <li class="col-sm-4 border_right_1">
-                                <a href="#" class="dropdown-toggle tag_menu" data-toggle="dropdown">Admin <span class="badge indent0"></span><b class="caret"></b></a>
+                                <a href="#" class="dropdown-toggle tag_menu" data-toggle="dropdown"><?php echo $_SESSION["utilisateur"]->getNom(),"",$_SESSION["utilisateur"]->getPrenom()?>> <span class="badge indent0"></span><b class="caret"></b></a>
                             </li>
                         <?php
                     }else{

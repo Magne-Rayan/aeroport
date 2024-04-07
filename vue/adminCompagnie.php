@@ -17,9 +17,10 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
     <script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdn.datatables.net/2.0.2/js/dataTables.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
 
     <script>
         var myCalendar;
@@ -75,6 +76,8 @@
     <tr>
         <th>ID COMPAGNIE</th>
         <th>NOM</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     </thead>
     <tbody>
@@ -101,10 +104,14 @@
     <tr>
         <th>ID COMPAGNIE</th>
         <th>NOM</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     </tfoot>
 </table>
 </body>
 <script>
-    new DataTable('#compagnie');
+    $(document).ready( function () {
+        $('#compagnie').DataTable();
+    } );
 </script>

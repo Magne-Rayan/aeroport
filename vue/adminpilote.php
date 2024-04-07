@@ -199,6 +199,8 @@
         <th>DATE DE NAISSANCE</th>
         <th>MAIL</th>
         <th>REF_ROLE</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
 
 
     </tr>
@@ -234,6 +236,12 @@
     <tr>
         <th>ID PILOTE</th>
         <th>NOM</th>
+        <th>PRENOM</th>
+        <th>DATE DE NAISSANCE</th>
+        <th>MAIL</th>
+        <th>REF_ROLE</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     </tfoot>
 </table>
