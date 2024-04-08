@@ -226,9 +226,6 @@
 							<div class="booking_left">
 								<ul class="nav nav-tabs">
 									<li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-plane"></i> Flight</a></li>
-									<li><a data-toggle="tab" href="#menu1"><i class="fa fa-hotel"></i> Room</a></li>
-									<li><a data-toggle="tab" href="#menu2"><i class="fa fa-car"></i> Cab</a></li>
-									<li><a data-toggle="tab" href="#menu3"><i class="fa fa-shopping-bag"></i> Holidays</a></li>
 								</ul>
 
 								<div class="tab-content clearfix">
@@ -238,17 +235,12 @@
 												<div class="col-sm-6 ">
 													<div class="tab_inner_1 clearfix">
 														<div class="tab_inner_1_inner clearfix">
-															<p>Start from</p>
+															<p>Ville de depart</p>
 															<input class="form-control" placeholder=" Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Departure</p>
-															<input class="form-control" id="cal_1" placeholder="mm/dd/yyyy" type="text">
 														</div>
 														<div class="tab_inner_1_inner clearfix">
 															<p>Men</p>
 															<select class="form_1 form-control">
-																<option value="2"> 2 </option>
 																<option value="1"> 1 </option>
 																<option value="2"> 2 </option>
 																<option value="1"> 3 </option>
@@ -261,17 +253,12 @@
 												<div class="col-sm-6 ">
 													<div class="tab_inner_1 clearfix">
 														<div class="tab_inner_1_inner clearfix">
-															<p>Destination</p>
+															<p>Ville d'arrivée</p>
 															<input class="form-control" placeholder="Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Onwards</p>
-															<input class="form-control" id="cal_2" placeholder="mm/dd/yyyy" type="text">
 														</div>
 														<div class="tab_inner_1_inner clearfix">
 															<p>Kids</p>
 															<select class="form_1 form-control">
-																<option value="2"> 2 </option>
 																<option value="1"> 1 </option>
 																<option value="2"> 2 </option>
 																<option value="1"> 3 </option>
@@ -288,69 +275,7 @@
 											</div>
 										</div>
 									</div>
-									<div id="menu1" class="tab-pane fade clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="menu_1_inner col-sm-12 clearfix">
-													<p>Go any where  you want to go</p>
-													<input class="form-control" placeholder="Italy" type="text">
-												</div>
-												<div class="clearfix">
-													<div class="col-sm-6 ">
-														<div class="tab_inner_1 clearfix">
 
-															<div class="tab_inner_1_inner clearfix">
-																<p>Check in</p>
-																<input class="form-control" id="cal_3" placeholder="mm/dd/yyyy" type="text">
-															</div>
-															<div class="tab_inner_1_inner clearfix">
-																<p>HOTEL 2</p>
-																<h6><a href="#">+ Book room</a></h6>
-															</div>
-														</div>
-													</div>
-													<div class="col-sm-6 ">
-														<div class="tab_inner_1 clearfix">
-															<div class="tab_inner_1_inner clearfix">
-																<p>Check out</p>
-																<input class="form-control" id="cal_4" placeholder="mm/dd/yyyy" type="text">
-															</div>
-															<div class="tab_inner_1_inner clearfix">
-																<div class="tab_inner_1_inner_1_inner clearfix">
-																	<div class="col-sm-6 space_left">
-																		<p>Men</p>
-																		<select class="form_1 form-control">
-																			<option value="2"> 2 </option>
-																			<option value="1"> 1 </option>
-																			<option value="2"> 2 </option>
-																			<option value="1"> 3 </option>
-																			<option value="4"> 4 </option>
-																			<option value="5"> 5 </option>
-																		</select>
-																	</div>
-																	<div class="col-sm-6 space_left">
-																		<p>Kids</p>
-																		<select class="form_1 form-control">
-																			<option value="2"> 2 </option>
-																			<option value="1"> 1 </option>
-																			<option value="2"> 2 </option>
-																			<option value="1"> 3 </option>
-																			<option value="4"> 4 </option>
-																			<option value="5"> 5 </option>
-																		</select>
-																	</div>
-																</div>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
 									<div id="menu2" class="tab-pane fade clearfix">
 										<div class="click clearfix">
 											<div class="tab_inner clearfix">
@@ -375,112 +300,6 @@
 														<div class="tab_inner_1_inner clearfix">
 															<p>End off</p>
 															<input class="form-control" placeholder="Address" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Time</p>
-															<select class="form-control">
-																<option>12:00 AM</option>
-																<option>12:30 AM</option>
-																<option>01:00 AM</option>
-																<option>01:30 AM</option>
-																<option>02:00 AM</option>
-																<option>02:30 AM</option>
-																<option>03:00 AM</option>
-																<option>03:30 AM</option>
-																<option>04:00 AM</option>
-																<option>04:30 AM</option>
-																<option>05:00 AM</option>
-																<option>05:30 AM</option>
-																<option>06:00 AM</option>
-																<option>06:30 AM</option>
-																<option>07:00 AM</option>
-																<option>07:30 AM</option>
-																<option>08:00 AM</option>
-																<option>08:30 AM</option>
-																<option>09:00 AM</option>
-																<option>09:30 AM</option>
-																<option>10:00 AM</option>
-																<option selected="">10:30 AM</option>
-																<option>11:00 AM</option>
-																<option>11:30 AM</option>
-																<option>12:00 PM</option>
-																<option>12:30 PM</option>
-																<option>01:00 PM</option>
-																<option>01:30 PM</option>
-																<option>02:00 PM</option>
-																<option>02:30 PM</option>
-																<option>03:00 PM</option>
-																<option>03:30 PM</option>
-																<option>04:00 PM</option>
-																<option>04:30 PM</option>
-																<option>05:00 PM</option>
-																<option>05:30 PM</option>
-																<option>06:00 PM</option>
-																<option>06:30 PM</option>
-																<option>07:00 PM</option>
-																<option>07:30 PM</option>
-																<option>08:00 PM</option>
-																<option>08:30 PM</option>
-																<option>09:00 PM</option>
-																<option>09:30 PM</option>
-																<option>10:00 PM</option>
-																<option>10:30 PM</option>
-																<option>11:00 PM</option>
-																<option>11:30 PM</option>
-															</select>
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Time</p>
-															<select class="form-control">
-																<option>12:00 AM</option>
-																<option>12:30 AM</option>
-																<option>01:00 AM</option>
-																<option>01:30 AM</option>
-																<option>02:00 AM</option>
-																<option>02:30 AM</option>
-																<option>03:00 AM</option>
-																<option>03:30 AM</option>
-																<option>04:00 AM</option>
-																<option>04:30 AM</option>
-																<option>05:00 AM</option>
-																<option>05:30 AM</option>
-																<option>06:00 AM</option>
-																<option>06:30 AM</option>
-																<option>07:00 AM</option>
-																<option>07:30 AM</option>
-																<option>08:00 AM</option>
-																<option>08:30 AM</option>
-																<option>09:00 AM</option>
-																<option>09:30 AM</option>
-																<option>10:00 AM</option>
-																<option selected="">10:30 AM</option>
-																<option>11:00 AM</option>
-																<option>11:30 AM</option>
-																<option>12:00 PM</option>
-																<option>12:30 PM</option>
-																<option>01:00 PM</option>
-																<option>01:30 PM</option>
-																<option>02:00 PM</option>
-																<option>02:30 PM</option>
-																<option>03:00 PM</option>
-																<option>03:30 PM</option>
-																<option>04:00 PM</option>
-																<option>04:30 PM</option>
-																<option>05:00 PM</option>
-																<option>05:30 PM</option>
-																<option>06:00 PM</option>
-																<option>06:30 PM</option>
-																<option>07:00 PM</option>
-																<option>07:30 PM</option>
-																<option>08:00 PM</option>
-																<option>08:30 PM</option>
-																<option>09:00 PM</option>
-																<option>09:30 PM</option>
-																<option>10:00 PM</option>
-																<option>10:30 PM</option>
-																<option>11:00 PM</option>
-																<option>11:30 PM</option>
-															</select>
 														</div>
 													</div>
 												</div>

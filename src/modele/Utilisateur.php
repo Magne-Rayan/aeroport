@@ -186,6 +186,8 @@ class Utilisateur
                 $this->setDate($res["age"]);
                 session_start();
                 $_SESSION["utilisateur"] = $this;
+                $_SESSION["nom"] = $this->getNom();
+                $_SESSION["prenom"] = $this->getPrenom();
                 header("Location: ../../vue/index.php");
             }else{
                header("Location: ../../vue/connexion.php");
