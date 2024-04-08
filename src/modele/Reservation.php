@@ -82,4 +82,15 @@ class Reservation{
     {
         $this->ref_avion = $ref_avion;
     }
+
+    public function resrvation(){
+        $bdd = new Bdd();
+        $req = $bdd->getBdd()->prepare('INSERT INTO `reservation`( `numeroReservation`,`ref_utilisateur`, `ref_avion`) VALUES ( :numeroReservation,:ref_utilisateur, :ref_avion )');
+        $req->execute(array(
+            'numeroReservation'=>$this->num,
+            'ref_utilisateur'=>$this->ref_utilisateur,
+            'res_avion'=>$this->ref_avion,
+        ));
+
+    }
 }

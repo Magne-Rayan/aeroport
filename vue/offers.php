@@ -224,57 +224,8 @@
 					<div class="booking clearfix">
 						<div class="col-sm-4">
 							<div class="booking_left">
-								<ul class="nav nav-tabs">
-									<li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-plane"></i> Flight</a></li>
-								</ul>
 
 								<div class="tab-content clearfix">
-									<div id="home" class="tab-pane fade in active clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Ville de depart</p>
-															<input class="form-control" placeholder=" Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Men</p>
-															<select class="form_1 form-control">
-																<option value="1"> 1 </option>
-																<option value="2"> 2 </option>
-																<option value="1"> 3 </option>
-																<option value="2"> 4 </option>
-																<option value="1"> 5 </option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Ville d'arrivée</p>
-															<input class="form-control" placeholder="Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Kids</p>
-															<select class="form_1 form-control">
-																<option value="1"> 1 </option>
-																<option value="2"> 2 </option>
-																<option value="1"> 3 </option>
-																<option value="5"> 4 </option>
-																<option value="4"> 5 </option>
-															</select>
-														</div>
-													</div>
-												</div>
-
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
 
 									<div id="menu2" class="tab-pane fade clearfix">
 										<div class="click clearfix">
@@ -300,71 +251,6 @@
 														<div class="tab_inner_1_inner clearfix">
 															<p>End off</p>
 															<input class="form-control" placeholder="Address" type="text">
-														</div>
-													</div>
-												</div>
-
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
-									<div id="menu3" class="tab-pane fade clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Start from</p>
-															<input class="form-control" placeholder="Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Check in</p>
-															<input class="form-control" id="cal_7" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>HOTEL 2</p>
-															<h6><a href="#">+ Book room</a></h6>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Destination</p>
-															<input class="form-control" placeholder=" Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Check in </p>
-															<input class="form-control" id="cal_8" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<div class="tab_inner_1_inner_1_inner clearfix">
-																<div class="col-sm-6 space_left">
-																	<p>Men</p>
-																	<select class="form_1 form-control">
-																		<option value="1"> 2 </option>
-																		<option value="2"> 1 </option>
-																		<option value="3"> 2 </option>
-																		<option value="4"> 3 </option>
-																		<option value="5"> 4 </option>
-																		<option value="2"> 5 </option>
-																	</select>
-																</div>
-																<div class="col-sm-6 space_left">
-																	<p>Kids</p>
-																	<select class="form_1 form-control">
-																		<option value="2"> 2 </option>
-																		<option value="1"> 1 </option>
-																		<option value="3"> 2 </option>
-																		<option value="1"> 3 </option>
-																		<option value="5"> 4 </option>
-																		<option value="4"> 5 </option>
-																	</select>
-																</div>
-															</div>
-
 														</div>
 													</div>
 												</div>
@@ -418,17 +304,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="flight_detail text-center clearfix">
-					<p>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</p>
-					<h3>LAST HOUR: <span>Belgium</span> - 4 nights - Airways+6* Room, Departure 17h Jan from $199/person</h3>
-					<h4><a href="#">LEARN MORE</a></h4>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -440,215 +316,43 @@
 			<div class="offers clearfix">
 				<div class="col-sm-3">
 					<div class="offers_left">
-						<h2>Trending Best<br> Offers</h2>
-						<p>Nulla quis sem at nibh elementum imperdiet Praesent mauris.</p>
+						<h2>Tous les vols <br> </h2>
 					</div>
 				</div>
 				<div class="col-sm-9">
 					<div class="offers_right">
 						<div id="Carousel" class="carousel slide">
 
-							<ol class="carousel-indicators">
-								<li data-target="#Carousel" data-slide-to="0" class="active"></li>
-								<li data-target="#Carousel" data-slide-to="1"></li>
-								<li data-target="#Carousel" data-slide-to="2" class=""></li>
-							</ol>
-
 							<!-- Carousel items -->
 							<div class="carousel-inner">
-
-								<div class="item active">
+                                <div class="item active">
 									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
+                                        <?php
+                                        include '../src/bdd/Bdd.php';
+                                        $bdd = new Bdd();
+                                        $req = $bdd->getBdd()->prepare("SELECT * FROM vol   ");
+                                        $req->execute();
+                                        $result = $req->fetchAll( PDO::FETCH_ASSOC);
+                                        foreach ($result as $item){
+                                        ?>
+                                        <div class="col-sm-4">
+                                            <div class="item_inner clearfix">
+                                                <h6><?php echo $item['destination'] ?></h6>
+												<h7><?php  echo $item['numero_vol']; ?></h7>
+												<h7><?php  echo $item['heureDepp']; ?> --><?php  echo $item['heureArr']; ?> </h7>
+                                                <h4><a href="reservation.php">reserver</a></h4>
 
-									</div><!--.row-->
+											</div>
+										</div>
+                                            <?php
+                                        }
+                                        ?>
 								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-							</div><!--.carousel-inner-->
-							<a data-slide="prev" href="#Carousel" class="left carousel-control control_1">‹</a>
-							<a data-slide="next" href="#Carousel" class="right carousel-control control_1">›</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="offers clearfix border_none_1">
-				<div class="col-sm-3">
-					<div class="offers_left">
-						<h2>Popular <br>Deals</h2>
-						<p>Nulla quis sem at nibh elementum imperdiet Praesent mauris.</p>
-					</div>
-				</div>
-				<div class="col-sm-9">
-					<div class="offers_right">
-						<div id="Carousel_1" class="carousel slide">
 
-							<ol class="carousel-indicators">
-								<li data-target="#Carousel_1" data-slide-to="0" class="active"></li>
-								<li data-target="#Carousel_1" data-slide-to="1"></li>
-								<li data-target="#Carousel_1" data-slide-to="2" class=""></li>
-							</ol>
-
-							<!-- Carousel items -->
-							<div class="carousel-inner">
-
-								<div class="item active">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-							</div><!--.carousel-inner-->
-							<a data-slide="prev" href="#Carousel_1" class="left carousel-control control_1">‹</a>
-							<a data-slide="next" href="#Carousel_1" class="right carousel-control control_1">›</a>
 						</div>
 					</div>
 				</div>
