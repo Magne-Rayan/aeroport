@@ -31,5 +31,14 @@ if(array_key_exists("ajouter",$_POST)){
     ]);
     $user->inscription();
 }
+}elseif (array_key_exists("editer",$_POST)){
+    $user = new Utilisateur([
+        "idUser" =>$_POST['id_user'],
+        "nom" =>$_POST['nom'],
+        "prenom" =>$_POST['prenom'],
+        "date" =>$_POST['age'],
+        "email" =>$_POST['email'],
+    ]);
+    $user->editer();
 
 }
