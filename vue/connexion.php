@@ -21,7 +21,7 @@
                     <label for="">Mot De Passe</label>
                 </div>
                 <div class="forget">
-                    <label for=""><input type="checkbox"><a href="#">Mot De Passe Oublié</a></label>
+                    <label for=""><a href="mdpoublier.php">Mot De Passe Oublié</a></label>
                 </div>
 
                 <button name="Connexion">Connexion</button>
