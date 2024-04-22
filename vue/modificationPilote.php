@@ -1,14 +1,4 @@
-<?php
-include '../src/bdd/Bdd.php';
 
-$bdd = new bdd();
-$req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_user=:id_user');
-$req->execute(array(
-    "id_user" =>$_GET["id_user"]
-));
-$res = $req->fetch();
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,8 +6,19 @@ $res = $req->fetch();
     <title>Edition d'un profil</title>
 </head>
 <body>
-<form action="../src/controleur/TraitementUtilisateur.php" method="post">
+<form action="../src/controleur/TraitementPilote.php" method="post">
+    <?php
+    include '../src/bdd/Bdd.php';
 
+    $bdd = new bdd();
+    $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_utilisateur=:id_utilisateur');
+    $req->execute(array(
+        "id_utilisateur" =>$_GET["id_utilisateur"]
+
+    ));
+    $res = $req->fetch();
+
+    ?>
     Nom :
     <input type="text" name="nom" value="<?=$res["nom"]?>"/><br>
 
@@ -31,10 +32,11 @@ $res = $req->fetch();
 
     <input type="email" name="email" value="<?=$res["mail"]?>"/><br>
 
-    <input type="hidden" name="id_user" value="<?=$res["id_user"]?>"/><br>
-    <input type="submit" name="edit er"/><br>
+    <input type="hidden" name="id_utilisateur" value="<?=$res["id_utilisateur"]?>"/><br>
+    <input type="submit" name="editer"/><br>
 
 </form>
+
 
 </body>
 </html>

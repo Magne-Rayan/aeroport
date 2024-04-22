@@ -38,7 +38,10 @@ if(array_key_exists("ajouter",$_POST)){
         "prenom" =>$_POST['prenom'],
         "date" =>$_POST['age'],
         "email" =>$_POST['email'],
-    ]);
-    $user->editer();
+    ]);$user->editer();}
+
+    if(array_key_exists("Modifier",$_POST)){
+      header("Location: ../vue/modificationPilote.php");
+
 
 }

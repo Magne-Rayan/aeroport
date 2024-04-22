@@ -190,6 +190,7 @@
 
 
    <div>
+       <form method="post" action="../src/controleur/TraitementUtilisateur.php">
 <table id="pilote" style="width:100%" class="display">
     <thead>
     <tr>
@@ -231,6 +232,7 @@
         <?php
     }
     ?>
+
     </tbody>
     <tfoot>
     <tr>
@@ -245,7 +247,9 @@
     </tr>
     </tfoot>
 </table>
+       </form>
 </body>
+
 <script>
     new DataTable('#pilote');
 </script>
