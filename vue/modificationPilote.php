@@ -2,9 +2,9 @@
 include '../src/bdd/Bdd.php';
 
 $bdd = new bdd();
-$req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_utilisateur=:id_utilisateur');
+$req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_user=:id_user');
 $req->execute(array(
-    "id_utilisateur" =>$_GET["id_utilisateur"]
+    "id_user" =>$_GET["id_user"]
 ));
 $res = $req->fetch();
 
@@ -31,8 +31,8 @@ $res = $req->fetch();
 
     <input type="email" name="email" value="<?=$res["mail"]?>"/><br>
 
-    <input type="hidden" name="id_utilisateur" value="<?=$res["id_utilisateur"]?>"/><br>
-    <input type="submit" name="editer"/><br>
+    <input type="hidden" name="id_user" value="<?=$res["id_user"]?>"/><br>
+    <input type="submit" name="edit er"/><br>
 
 </form>
 

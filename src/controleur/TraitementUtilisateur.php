@@ -33,7 +33,7 @@ if(array_key_exists("ajouter",$_POST)){
 }
 }elseif (array_key_exists("editer",$_POST)){
     $user = new Utilisateur([
-        "idUser" =>$_POST['id_user'],
+        "id_utilisateur" =>$_POST['id_utilisateur'],
         "nom" =>$_POST['nom'],
         "prenom" =>$_POST['prenom'],
         "date" =>$_POST['age'],
