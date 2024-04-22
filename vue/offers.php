@@ -224,133 +224,9 @@
 					<div class="booking clearfix">
 						<div class="col-sm-4">
 							<div class="booking_left">
-								<ul class="nav nav-tabs">
-									<li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-plane"></i> Flight</a></li>
-									<li><a data-toggle="tab" href="#menu1"><i class="fa fa-hotel"></i> Room</a></li>
-									<li><a data-toggle="tab" href="#menu2"><i class="fa fa-car"></i> Cab</a></li>
-									<li><a data-toggle="tab" href="#menu3"><i class="fa fa-shopping-bag"></i> Holidays</a></li>
-								</ul>
 
 								<div class="tab-content clearfix">
-									<div id="home" class="tab-pane fade in active clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Start from</p>
-															<input class="form-control" placeholder=" Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Departure</p>
-															<input class="form-control" id="cal_1" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Men</p>
-															<select class="form_1 form-control">
-																<option value="2"> 2 </option>
-																<option value="1"> 1 </option>
-																<option value="2"> 2 </option>
-																<option value="1"> 3 </option>
-																<option value="2"> 4 </option>
-																<option value="1"> 5 </option>
-															</select>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Destination</p>
-															<input class="form-control" placeholder="Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Onwards</p>
-															<input class="form-control" id="cal_2" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Kids</p>
-															<select class="form_1 form-control">
-																<option value="2"> 2 </option>
-																<option value="1"> 1 </option>
-																<option value="2"> 2 </option>
-																<option value="1"> 3 </option>
-																<option value="5"> 4 </option>
-																<option value="4"> 5 </option>
-															</select>
-														</div>
-													</div>
-												</div>
 
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
-									<div id="menu1" class="tab-pane fade clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="menu_1_inner col-sm-12 clearfix">
-													<p>Go any where  you want to go</p>
-													<input class="form-control" placeholder="Italy" type="text">
-												</div>
-												<div class="clearfix">
-													<div class="col-sm-6 ">
-														<div class="tab_inner_1 clearfix">
-
-															<div class="tab_inner_1_inner clearfix">
-																<p>Check in</p>
-																<input class="form-control" id="cal_3" placeholder="mm/dd/yyyy" type="text">
-															</div>
-															<div class="tab_inner_1_inner clearfix">
-																<p>HOTEL 2</p>
-																<h6><a href="#">+ Book room</a></h6>
-															</div>
-														</div>
-													</div>
-													<div class="col-sm-6 ">
-														<div class="tab_inner_1 clearfix">
-															<div class="tab_inner_1_inner clearfix">
-																<p>Check out</p>
-																<input class="form-control" id="cal_4" placeholder="mm/dd/yyyy" type="text">
-															</div>
-															<div class="tab_inner_1_inner clearfix">
-																<div class="tab_inner_1_inner_1_inner clearfix">
-																	<div class="col-sm-6 space_left">
-																		<p>Men</p>
-																		<select class="form_1 form-control">
-																			<option value="2"> 2 </option>
-																			<option value="1"> 1 </option>
-																			<option value="2"> 2 </option>
-																			<option value="1"> 3 </option>
-																			<option value="4"> 4 </option>
-																			<option value="5"> 5 </option>
-																		</select>
-																	</div>
-																	<div class="col-sm-6 space_left">
-																		<p>Kids</p>
-																		<select class="form_1 form-control">
-																			<option value="2"> 2 </option>
-																			<option value="1"> 1 </option>
-																			<option value="2"> 2 </option>
-																			<option value="1"> 3 </option>
-																			<option value="4"> 4 </option>
-																			<option value="5"> 5 </option>
-																		</select>
-																	</div>
-																</div>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
 									<div id="menu2" class="tab-pane fade clearfix">
 										<div class="click clearfix">
 											<div class="tab_inner clearfix">
@@ -375,177 +251,6 @@
 														<div class="tab_inner_1_inner clearfix">
 															<p>End off</p>
 															<input class="form-control" placeholder="Address" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Time</p>
-															<select class="form-control">
-																<option>12:00 AM</option>
-																<option>12:30 AM</option>
-																<option>01:00 AM</option>
-																<option>01:30 AM</option>
-																<option>02:00 AM</option>
-																<option>02:30 AM</option>
-																<option>03:00 AM</option>
-																<option>03:30 AM</option>
-																<option>04:00 AM</option>
-																<option>04:30 AM</option>
-																<option>05:00 AM</option>
-																<option>05:30 AM</option>
-																<option>06:00 AM</option>
-																<option>06:30 AM</option>
-																<option>07:00 AM</option>
-																<option>07:30 AM</option>
-																<option>08:00 AM</option>
-																<option>08:30 AM</option>
-																<option>09:00 AM</option>
-																<option>09:30 AM</option>
-																<option>10:00 AM</option>
-																<option selected="">10:30 AM</option>
-																<option>11:00 AM</option>
-																<option>11:30 AM</option>
-																<option>12:00 PM</option>
-																<option>12:30 PM</option>
-																<option>01:00 PM</option>
-																<option>01:30 PM</option>
-																<option>02:00 PM</option>
-																<option>02:30 PM</option>
-																<option>03:00 PM</option>
-																<option>03:30 PM</option>
-																<option>04:00 PM</option>
-																<option>04:30 PM</option>
-																<option>05:00 PM</option>
-																<option>05:30 PM</option>
-																<option>06:00 PM</option>
-																<option>06:30 PM</option>
-																<option>07:00 PM</option>
-																<option>07:30 PM</option>
-																<option>08:00 PM</option>
-																<option>08:30 PM</option>
-																<option>09:00 PM</option>
-																<option>09:30 PM</option>
-																<option>10:00 PM</option>
-																<option>10:30 PM</option>
-																<option>11:00 PM</option>
-																<option>11:30 PM</option>
-															</select>
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Time</p>
-															<select class="form-control">
-																<option>12:00 AM</option>
-																<option>12:30 AM</option>
-																<option>01:00 AM</option>
-																<option>01:30 AM</option>
-																<option>02:00 AM</option>
-																<option>02:30 AM</option>
-																<option>03:00 AM</option>
-																<option>03:30 AM</option>
-																<option>04:00 AM</option>
-																<option>04:30 AM</option>
-																<option>05:00 AM</option>
-																<option>05:30 AM</option>
-																<option>06:00 AM</option>
-																<option>06:30 AM</option>
-																<option>07:00 AM</option>
-																<option>07:30 AM</option>
-																<option>08:00 AM</option>
-																<option>08:30 AM</option>
-																<option>09:00 AM</option>
-																<option>09:30 AM</option>
-																<option>10:00 AM</option>
-																<option selected="">10:30 AM</option>
-																<option>11:00 AM</option>
-																<option>11:30 AM</option>
-																<option>12:00 PM</option>
-																<option>12:30 PM</option>
-																<option>01:00 PM</option>
-																<option>01:30 PM</option>
-																<option>02:00 PM</option>
-																<option>02:30 PM</option>
-																<option>03:00 PM</option>
-																<option>03:30 PM</option>
-																<option>04:00 PM</option>
-																<option>04:30 PM</option>
-																<option>05:00 PM</option>
-																<option>05:30 PM</option>
-																<option>06:00 PM</option>
-																<option>06:30 PM</option>
-																<option>07:00 PM</option>
-																<option>07:30 PM</option>
-																<option>08:00 PM</option>
-																<option>08:30 PM</option>
-																<option>09:00 PM</option>
-																<option>09:30 PM</option>
-																<option>10:00 PM</option>
-																<option>10:30 PM</option>
-																<option>11:00 PM</option>
-																<option>11:30 PM</option>
-															</select>
-														</div>
-													</div>
-												</div>
-
-											</div>
-											<div class="tab_inner_last clearfix">
-												<h4><a href="#">SEARCH</a></h4>
-											</div>
-										</div>
-									</div>
-									<div id="menu3" class="tab-pane fade clearfix">
-										<div class="click clearfix">
-											<div class="tab_inner clearfix">
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Start from</p>
-															<input class="form-control" placeholder="Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Check in</p>
-															<input class="form-control" id="cal_7" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>HOTEL 2</p>
-															<h6><a href="#">+ Book room</a></h6>
-														</div>
-													</div>
-												</div>
-												<div class="col-sm-6 ">
-													<div class="tab_inner_1 clearfix">
-														<div class="tab_inner_1_inner clearfix">
-															<p>Destination</p>
-															<input class="form-control" placeholder=" Airport" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<p>Check in </p>
-															<input class="form-control" id="cal_8" placeholder="mm/dd/yyyy" type="text">
-														</div>
-														<div class="tab_inner_1_inner clearfix">
-															<div class="tab_inner_1_inner_1_inner clearfix">
-																<div class="col-sm-6 space_left">
-																	<p>Men</p>
-																	<select class="form_1 form-control">
-																		<option value="1"> 2 </option>
-																		<option value="2"> 1 </option>
-																		<option value="3"> 2 </option>
-																		<option value="4"> 3 </option>
-																		<option value="5"> 4 </option>
-																		<option value="2"> 5 </option>
-																	</select>
-																</div>
-																<div class="col-sm-6 space_left">
-																	<p>Kids</p>
-																	<select class="form_1 form-control">
-																		<option value="2"> 2 </option>
-																		<option value="1"> 1 </option>
-																		<option value="3"> 2 </option>
-																		<option value="1"> 3 </option>
-																		<option value="5"> 4 </option>
-																		<option value="4"> 5 </option>
-																	</select>
-																</div>
-															</div>
-
 														</div>
 													</div>
 												</div>
@@ -599,17 +304,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<div class="flight_detail text-center clearfix">
-					<p>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</p>
-					<h3>LAST HOUR: <span>Belgium</span> - 4 nights - Airways+6* Room, Departure 17h Jan from $199/person</h3>
-					<h4><a href="#">LEARN MORE</a></h4>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -621,215 +316,43 @@
 			<div class="offers clearfix">
 				<div class="col-sm-3">
 					<div class="offers_left">
-						<h2>Trending Best<br> Offers</h2>
-						<p>Nulla quis sem at nibh elementum imperdiet Praesent mauris.</p>
+						<h2>Tous les vols <br> </h2>
 					</div>
 				</div>
 				<div class="col-sm-9">
 					<div class="offers_right">
 						<div id="Carousel" class="carousel slide">
 
-							<ol class="carousel-indicators">
-								<li data-target="#Carousel" data-slide-to="0" class="active"></li>
-								<li data-target="#Carousel" data-slide-to="1"></li>
-								<li data-target="#Carousel" data-slide-to="2" class=""></li>
-							</ol>
-
 							<!-- Carousel items -->
 							<div class="carousel-inner">
-
-								<div class="item active">
+                                <div class="item active">
 									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
+                                        <?php
+                                        include '../src/bdd/Bdd.php';
+                                        $bdd = new Bdd();
+                                        $req = $bdd->getBdd()->prepare("SELECT * FROM vol   ");
+                                        $req->execute();
+                                        $result = $req->fetchAll( PDO::FETCH_ASSOC);
+                                        foreach ($result as $item){
+                                        ?>
+                                        <div class="col-sm-4">
+                                            <div class="item_inner clearfix">
+                                                <h6><?php echo $item['destination'] ?></h6>
+												<h7><?php  echo $item['numero_vol']; ?></h7>
+												<h7><?php  echo $item['heureDepp']; ?> --><?php  echo $item['heureArr']; ?> </h7>
+                                                <h4><a href="reservation.php">reserver</a></h4>
 
-									</div><!--.row-->
+											</div>
+										</div>
+                                            <?php
+                                        }
+                                        ?>
 								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/6.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Italy - Rome</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/7.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Paris</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/8.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Go to Sea Beaches</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-							</div><!--.carousel-inner-->
-							<a data-slide="prev" href="#Carousel" class="left carousel-control control_1">‹</a>
-							<a data-slide="next" href="#Carousel" class="right carousel-control control_1">›</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="offers clearfix border_none_1">
-				<div class="col-sm-3">
-					<div class="offers_left">
-						<h2>Popular <br>Deals</h2>
-						<p>Nulla quis sem at nibh elementum imperdiet Praesent mauris.</p>
-					</div>
-				</div>
-				<div class="col-sm-9">
-					<div class="offers_right">
-						<div id="Carousel_1" class="carousel slide">
 
-							<ol class="carousel-indicators">
-								<li data-target="#Carousel_1" data-slide-to="0" class="active"></li>
-								<li data-target="#Carousel_1" data-slide-to="1"></li>
-								<li data-target="#Carousel_1" data-slide-to="2" class=""></li>
-							</ol>
-
-							<!-- Carousel items -->
-							<div class="carousel-inner">
-
-								<div class="item active">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/9.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>Australia Valleys</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/10.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>England</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<a href="#" class=""><img src="img/11.jpg" alt="Image" style="max-width:100%;"></a>
-											<div class="item_inner clearfix">
-												<h6>New York</h6>
-												<p>Discount up to 20%</p>
-											</div>
-										</div>
-
-									</div><!--.row-->
-								</div><!--.item-->
-
-							</div><!--.carousel-inner-->
-							<a data-slide="prev" href="#Carousel_1" class="left carousel-control control_1">‹</a>
-							<a data-slide="next" href="#Carousel_1" class="right carousel-control control_1">›</a>
 						</div>
 					</div>
 				</div>

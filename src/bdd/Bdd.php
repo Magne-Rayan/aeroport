@@ -1,12 +1,15 @@
 <?php
 
+
 class Bdd
 {
+
     private $bdd;
     private $serveur = "localhost";
     private $nomBdd = "aeroport";
     private $username = "Aeroport";
     private $password = "97Y4]jj)q/YQ";
+
 
     public function __construct()
     {
@@ -17,4 +20,5 @@ class Bdd
     {
         return $this->bdd;
     }
+
 }

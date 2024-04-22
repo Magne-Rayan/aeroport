@@ -94,6 +94,7 @@
 
 
    <div>
+       <form method="post" action="../src/controleur/TraitementPilote.php">
 <table id="pilote" style="width:100%" class="display">
     <thead>
     <tr>
@@ -103,6 +104,8 @@
         <th>DATE DE NAISSANCE</th>
         <th>MAIL</th>
         <th>REF_ROLE</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
 
 
     </tr>
@@ -133,17 +136,29 @@
         <?php
     }
     ?>
+
     </tbody>
     <tfoot>
     <tr>
         <th>ID PILOTE</th>
         <th>NOM</th>
+        <th>PRENOM</th>
+        <th>DATE DE NAISSANCE</th>
+        <th>MAIL</th>
+        <th>REF_ROLE</th>
+        <th>Modifier</th>
+        <th>Supprimer</th>
     </tr>
     </tfoot>
 </table>
+       </form>
 </body>
+<<<<<<< HEAD
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+=======
+
+>>>>>>> 865d62a5bf82d98ea700407e2d9d2f1538e43685
 <script>
     $(document).ready(function(){
         $('#datatable').DataTable();

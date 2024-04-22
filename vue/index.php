@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -171,12 +171,27 @@
 							<li><a href="#">Dropdown Inner 1</a></li>
 						</ul>
 					</li>
-                    <li>
-                        <a class="tag_menu" href="connexion.php">Conexion</a>
-                    </li>
-                    <li>
-                        <a class="tag_menu" href="inscription.php">Inscription</a>
-                    </li>
+                    <?php
+                    include '../src/modele/Utilisateur.php';
+                    var_dump($_SESSION["utilisateur"]);
+
+                    if(isset($_SESSION["utilisateur"])){
+                        ?>
+                            <li class="col-sm-4 border_right_1">
+                                <a href="#" class="dropdown-toggle tag_menu" data-toggle="dropdown"><?php echo $_SESSION["nom"],"",$_SESSION["prenom"]?>> <span class="badge indent0"></span><b class="caret"></b></a>
+                            </li>
+                        <?php
+                    }else{
+                    ?>
+                        <li>
+                            <a class="tag_menu" href="connexion.php">Connexion</a>
+                        </li>
+                        <li>
+                            <a class="tag_menu" href="inscription.php">Inscription</a>
+                        </li>
+                        <?php
+                    }
+                    ?>
 
 				</ul>
 
@@ -195,7 +210,7 @@
 					<!-- Wrapper-for-Slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active"><!-- First-Slide -->
-							<img src="img/1.jpg" alt="" class="img-responsive">
+							<img src="../assets/images/1.jpg" alt="" class="img-responsive">
 							<div class="carousel-caption kb_caption kb_caption_right">
 								<h3 data-animation="animated flipInX" class=""> BRAZIL<br> <span class="dollar_2">UK</span></h3>
 								<h4 data-animation="animated flipInX" class="">START<br> <span class="dollar_1">$1000</span></h4>

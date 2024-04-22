@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title> au compagnie</title>
+    <title>Compagnie</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,17 +17,6 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="js/codebase/dhtmlxcalendar.css"/>
     <script src="../assets/js/codebase/dhtmlxcalendar.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-
-    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
-
-    <script>
-        var myCalendar;
-        function doOnLoad() {
-            myCalendar = new dhtmlXCalendarObject(["cal_1","cal_2", "cal_3", "cal_4", "cal_5", "cal_6", "cal_7", "cal_8"]);
-        }
-    </script>
 </head>
 <body>
 <section id="header">
@@ -50,16 +39,13 @@
                     <li class="dropdown dropdown-large">
 
                     <li>
-                        <a class="tag_menu" href="adminCompagnie.php">Compagnie</a>                    </li>
+                        <a class="tag_menu" href="index.php">Acceuil</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="blog.php">Pilotes</a>                    </li>
+                        <a class="tag_menu" href="ajoutPilote.php">Ajouter Pilotes</a>                    </li>
 
                     <li>
-                        <a class="tag_menu" href="offers.php">Vols</a>                    </li>
-
-                    <li>
-                        <a class="tag_menu" href="detail.php">Avions</a>                    </li>
+                        <a class="tag_menu" href="afficherAvion.php">Avions</a>                    </li>
 
 
                 </ul>
@@ -71,49 +57,40 @@
     </nav>
 </section>
 <div id="toTop" class="btn btn-info" style="display: block; background:none; color:#999; border-color:#999;"><span class="fa fa-chevron-up"></span></div>
-<form method="post"action="../src/controleur/TraitementCompagnie.php">
-<table id="compagnie" style="width:100%" class="display">
-    <thead>
-    <tr>
-        <th>ID COMPAGNIE</th>
-        <th>NOM</th>
-        <th>Modifier</th>
-        <th>Supprimer</th>
-    </tr>
-    </thead>
-    <tbody>
-    <?php
-    include '../src/bdd/Bdd.php';
-    $bdd = new Bdd();
-    $req = $bdd->getBdd()->prepare("SELECT * FROM COMPAGNIE ");
-    $req->execute();
-    $result = $req->fetchAll( PDO::FETCH_ASSOC);
-    foreach ($result as $item){
-        ?>
+<div class="form-box" >
+    <div class="form-value">
+        <form action="../src/controleur/TraitementUtilisateur.php" method="post">
+            <h2>Ajouter un pilote</h2>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="text" name="nom" required>
+                <label for="">Nom</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="text" name="prenom" required>
+                <label for="">Prenom</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="date" name="dateNaissance" required>
+                <label for=""> </label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" name="mdp" required>
+                <label for="">Mot De Passe</label>
+            </div>
 
-        <tr>
-            <td><?php  echo $item['id_compagnie']; ?></td>
-            <td><?php  echo $item['nom']; ?></td>
-            <td><input class="button_1" type="submit" name="Modifier" value="Modifier"></td>
-            <td><input class="button_1" type="submit" name="Supprimer" value="Supprimer"></td>
-        </tr>
+            <button name ="ajouter"> Inscription</button>
 
-        <?php
-    }?>
-    </tbody>
-    <tfoot>
-    <tr>
-        <th>ID COMPAGNIE</th>
-        <th>NOM</th>
-        <th>Modifier</th>
-        <th>Supprimer</th>
-    </tr>
-    </tfoot>
-</table>
-</form>
+
+        </form>
+    </div>
+</div>
 </body>
-<script>
-    $(document).ready( function () {
-        $('#compagnie').DataTable();
-    } );
-</script>
