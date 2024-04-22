@@ -16,8 +16,9 @@
 </head>
 
 <body>
-
+<form method="post" action="../src/controleur/TraitementReservation.php">
 <h1> Réservations </h1>
+
 <table id="reservation">
 
     <thead>
@@ -30,6 +31,7 @@
       <th>Numéro de vol</th>
     <th>Heure de départ</th>
     <th>Heure d'arriver</th>
+
 
 
   </tr>
@@ -50,6 +52,9 @@ foreach ($res as $item){
     <td><?php echo  $item['numero_vol']?></td>
     <td><?php echo  $item['heureDepp']?></td>
     <td><?php echo  $item['heureArr']?></td>
+
+    <input class="button_1" type="submit" name="Modifier" value="Modifier">
+
 </tr>
 <?php
 }
@@ -57,6 +62,7 @@ foreach ($res as $item){
 ?>
     </tbody>
 </table>
+</form>
 <script>
     $(document).ready( function () {
         $('#reservation').DataTable();

@@ -1,4 +1,14 @@
+<?php
+include '../src/bdd/Bdd.php';
 
+$bdd = new bdd();
+$req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_utilisateur=:id_utilisateur');
+$req->execute(array(
+    "id_utilisateur" =>$_GET["id_utilisateur"]
+));
+$res = $req->fetch();
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,18 +17,7 @@
 </head>
 <body>
 <form action="../src/controleur/TraitementPilote.php" method="post">
-    <?php
-    include '../src/bdd/Bdd.php';
 
-    $bdd = new bdd();
-    $req = $bdd->getBdd()->prepare('SELECT * FROM `utilisateur` WHERE id_utilisateur=:id_utilisateur');
-    $req->execute(array(
-        "id_utilisateur" =>$_GET["id_utilisateur"]
-
-    ));
-    $res = $req->fetch();
-
-    ?>
     Nom :
     <input type="text" name="nom" value="<?=$res["nom"]?>"/><br>
 
@@ -36,7 +35,6 @@
     <input type="submit" name="editer"/><br>
 
 </form>
-
 
 </body>
 </html>
