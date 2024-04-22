@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Tableau compagnie</title>
+    <title> au compagnie</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,6 +71,7 @@
     </nav>
 </section>
 <div id="toTop" class="btn btn-info" style="display: block; background:none; color:#999; border-color:#999;"><span class="fa fa-chevron-up"></span></div>
+<form method="post"action="../src/controleur/TraitementCompagnie.php">
 <table id="compagnie" style="width:100%" class="display">
     <thead>
     <tr>
@@ -109,6 +110,7 @@
     </tr>
     </tfoot>
 </table>
+</form>
 </body>
 <script>
     $(document).ready( function () {

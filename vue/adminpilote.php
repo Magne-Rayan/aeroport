@@ -190,7 +190,7 @@
 
 
    <div>
-       <form method="post" action="../src/controleur/TraitementUtilisateur.php">
+       <form method="post" action="../src/controleur/TraitementPilote.php">
 <table id="pilote" style="width:100%" class="display">
     <thead>
     <tr>

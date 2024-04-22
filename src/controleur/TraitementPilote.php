@@ -18,3 +18,4 @@ if (array_key_exists("editer",$_POST)){
     if(array_key_exists("Modifier",$_POST)){
         header("Location: ../vue/modificationPilote.php");
 }}
+?>
