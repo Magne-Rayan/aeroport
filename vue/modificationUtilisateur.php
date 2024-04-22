@@ -32,7 +32,7 @@ $res = $req->fetch();
     <input type="email" name="email" value="<?=$res["mail"]?>"/><br>
 
     <input type="hidden" name="id_user" value="<?=$res["id_user"]?>"/><br>
-    <input type="submit" name="editer"/><br>
+    <input type="submit" name="edit er"/><br>
 
 </form>
 
